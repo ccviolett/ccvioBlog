@@ -1,0 +1,257 @@
+{
+  "main": {
+    "id": "e9ad68fa955f46da",
+    "type": "split",
+    "children": [
+      {
+        "id": "764d6ffab680086f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8385af399fc87111",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/markdown_best_practice.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fa33a5b43020df91",
+    "type": "split",
+    "children": [
+      {
+        "id": "df01574bad1dab1a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a62fd305ccd5e37a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4dd1d4185a5d0d19",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "你们这些",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3b6c0d0082ca5d36",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "246d0b52e7b3d867",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 231.50390243530273
+  },
+  "right": {
+    "id": "1888c7be6e522785",
+    "type": "split",
+    "children": [
+      {
+        "id": "e04f86d6b87265f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5f4b8c519d6e37af",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "b86b41b68edaf790",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c094c27adf7903ed",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/markdown_best_practice.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ddc3c3735254d431",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/markdown_best_practice.md"
+              }
+            }
+          },
+          {
+            "id": "d11157424b6f78c7",
+            "type": "leaf",
+            "state": {
+              "type": "example-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "257ad4d77ad4a4d8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/markdown_best_practice.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "177af19b015172e4",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "ee8fe33f97f7b603",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "zk-prefixer:创建时间戳笔记": false,
+      "graph:查看关系图谱": false,
+      "random-note:开始漫游笔记": false,
+      "audio-recorder:开始/结束录音": false,
+      "command-palette:打开命令面板": false,
+      "switcher:打开快速切换": false,
+      "templates:插入模板": false,
+      "workspaces:管理工作区布局": false,
+      "canvas:新建白板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "privacy-glasses:Toggle Privacy Glasses": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "8385af399fc87111",
+  "lastOpenFiles": [
+    "subjects/ControlEngineering/test/neuq/2023test.md",
+    "subjects/ControlEngineering/test/neuq/Df7a90A16D1699882032058-84e8abf4-44ba-4dad-96d0-cd18d33519a6.png",
+    "subjects/ControlEngineering/test/Df7a90A16D1699882032058-84e8abf4-44ba-4dad-96d0-cd18d33519a6.png",
+    "subjects/ControlEngineering/8-bode.md",
+    "subjects/ControlEngineering/test/neuq/2a32Bfb4dC1699881743563-78b8e770-ea38-4820-a81e-d2bfb39d072f.png",
+    "subjects/ControlEngineering/test/2a32Bfb4dC1699881743563-78b8e770-ea38-4820-a81e-d2bfb39d072f.png",
+    "subjects/ControlEngineering/test/3E08C37BF71699881546210-b9bef73a-2305-4f0e-a050-2a1aff82578c.png",
+    "subjects/ControlEngineering/test/neuq/3E08C37BF71699881546210-b9bef73a-2305-4f0e-a050-2a1aff82578c.png",
+    "subjects/ControlEngineering/test/neuq/c3c9aDe61e1699882854724-f8895c14-3778-4fd1-84bc-aa6d84338ce4.png",
+    "subjects/ControlEngineering/test/neuq/21b3bAA5CC1699882814355-903f292a-3a76-45dc-85f7-f66ab871c646.png",
+    "subjects/ControlEngineering/test/neuq/5142F27c431699882279437-3ad2d375-08f3-499a-b4d6-25e75ccfa2ab.png",
+    "subjects/ControlEngineering/test/neuq/fb3b3e6A4A1699881918150-5d2a36f2-43b8-401f-85a0-461477e6075f.png",
+    "posts/markdown_best_practice.md",
+    "subjects/ControlEngineering/test/neuq/README.md",
+    "subjects/ControlEngineering/README.md",
+    "subjects/ControlEngineering/test/README.md",
+    "subjects/ControlEngineering/9-routh.md",
+    "subjects/202312102310.md",
+    "subjects/ControlEngineering/7-nyquist.md",
+    "subjects/ControlEngineering/5-error_analyse.md",
+    "subjects/ControlEngineering/6-frequency_characteristic.md",
+    "subjects/ControlEngineering/4-time_domain.md",
+    "subjects/ControlEngineering/3-block_diagram.md",
+    "subjects/ControlEngineering/2-transfer_function.md",
+    "subjects/ControlEngineering/1-laplace_transfer.md",
+    "subjects/ControlEngineering/0-basic_info.md",
+    "posts/dragonfruit.md",
+    "subjects/ControlEngineering/test/neuq/index.assets",
+    "未归类/202312091341.md",
+    "未归类/2023年机械控制工程基础复习.md",
+    "未归类/202312101828.md",
+    "未归类/信号的时域描述.md",
+    "未归类/blog.md",
+    "首页/所有 Blog 相关.md",
+    "未归类/Vercel.md",
+    "未归类/未命名 13.md",
+    "机械工程测试技术思维导图.canvas",
+    "学习路线.canvas",
+    "未归类/机械工程测试技术/附件",
+    "未归类/机械工程测试技术",
+    "机械控制工程基础/附件",
+    "机械控制工程基础",
+    "未命名.canvas",
+    "文案/出题/2023-10-23-执理教育练习赛 6 题 1",
+    "文案/每日文章",
+    "概念/产品/风泽中孚/风泽中孚 2023 年 4 月团队招新兼挑战杯红色专项招新.canvas",
+    "概念/产品/风泽中孚/2023 挑战杯红色专项思维导图.canvas",
+    "概念/学科/电工学/模拟电子技术",
+    "概念/学科/数控技术",
+    "概念/学科/控制基础",
+    "爱情.canvas",
+    "2023 开源之夏.canvas",
+    "C 语言考试.canvas",
+    "概念/学科/材料力学/材料力学.canvas",
+    "概念/学科/工程材料/工程材料.canvas"
+  ]
+}

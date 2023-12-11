@@ -16,7 +16,14 @@ export default sidebar({
       prefix: "posts/",
       children: "structure",
     },
+    {
+      text: "学科",
+      icon: "book",
+      prefix: "subjects/",
+      children: "structure",
+    },
     "intro",
     "slides",
+    "links",
   ],
 });

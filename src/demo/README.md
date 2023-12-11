@@ -1,5 +1,5 @@
 ---
-title: 主要功能与配置演示
+title: 文档库
 index: false
 icon: laptop-code
 category:
@@ -8,7 +8,7 @@ category:
 
 ## 目录
 
-- [Markdown 展示](markdown.md)
+- [Markdown 展示](demo/markdown.md)
 
 - [页面展示](page.md)
 

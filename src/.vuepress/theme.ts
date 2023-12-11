@@ -9,8 +9,8 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "CCViolett",
+    url: "https://ccviolett.github.io",
   },
 
   iconAssets: "fontawesome-with-brands",
@@ -35,8 +35,10 @@ export default hopeTheme({
     description: "一个前端开发者",
     intro: "/intro.html",
     medias: {
-      Baidu: "https://example.com",
-      BiliBili: "https://example.com",
+      BiliBili: "https://space.bilibili.com/25734964",
+      GitHub: "https://github.com/ccviolett",
+      Zhihu: "https://www.zhihu.com/people/41-3-26-70-90",
+      
       Bitbucket: "https://example.com",
       Dingding: "https://example.com",
       Discord: "https://example.com",
@@ -46,7 +48,6 @@ export default hopeTheme({
       Facebook: "https://example.com",
       Flipboard: "https://example.com",
       Gitee: "https://example.com",
-      GitHub: "https://example.com",
       Gitlab: "https://example.com",
       Gmail: "mailto:info@example.com",
       Instagram: "https://example.com",
@@ -65,7 +66,6 @@ export default hopeTheme({
       Weibo: "https://example.com",
       Whatsapp: "https://example.com",
       Youtube: "https://example.com",
-      Zhihu: "https://example.com",
       MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR],
     },
   },
