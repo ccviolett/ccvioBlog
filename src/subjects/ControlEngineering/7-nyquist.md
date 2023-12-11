@@ -11,7 +11,7 @@ order: 70
 
 ## 典型环节的 Nyquist 图
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111138064.png)
+![](/assets/images/match/subjects/ControlEngineering/74C9F42261202312111138064.png)
 
 :::tip
 例：延时环节$e^{-3s}$的相频特性$\varphi(\omega) = 3-\omega$。
@@ -40,7 +40,7 @@ $$
 
 其 Nyquist 图如下：
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310220.png)
+![](/assets/images/match/subjects/ControlEngineering/A960F913b0202312102310220.png)
 
 相角$0^{\circ} \sim -180^{\circ}$，与负虚轴有交点。令$\angle G(j\omega) = -90^{\circ}$，得$\omega = \frac{1}{T} = \omega_n$，$G(j \omega_n) = \frac{1}{2\zeta}\angle -90^{\circ}$为负虚轴交点。
 
@@ -54,7 +54,6 @@ $$
 6. 勾画出大致曲线
 
 ::: details 例题1（乃氏图的绘制）
-
 试画出$G(s) = \frac{1}{(s + 1)(2s + 1)}$的乃氏图
 
 解：频率特性$G(j\omega) = \frac{1}{(j\omega + 1)(2 j\omega + 1)}$故
@@ -74,7 +73,7 @@ $$
 
 两角互余，正切互为倒数，故两边取正切，得$2\omega = \frac{1}{\omega}$，即$\omega = \sqrt{\frac{1}{2}} = \frac{\sqrt{2}}{2}$
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111143703.png)
+![](/assets/images/match/subjects/ControlEngineering/f4Ddb6C4b4202312111143703.png)
 :::
 
 ::: details 例题2（绘制乃氏图）
@@ -97,5 +96,6 @@ $$
 
 两角互余，正切互为倒数，两边取正切，得得$2\omega = \frac{1}{\omega}$，即$\omega = \sqrt{\frac{1}{2}} = \frac{\sqrt{2}}{2}$
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310169.png)
+![](/assets/images/match/subjects/ControlEngineering/8F7CED5D76202312102310169.png)
 :::
+

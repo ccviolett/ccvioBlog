@@ -18,7 +18,7 @@ $$f(t) = L^{-1} [F(s)] = \frac{1}{2\pi j} \int _{\sigma - j \infty} ^{\sigma + j
 
 ## 简单函数的拉氏变换
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102325862.png)
+![](/assets/images/match/subjects/ControlEngineering/FdE2827bcc202312102325862.png)
 
 ## 拉氏变换性质
 
@@ -384,3 +384,4 @@ y_{o}(0) = \lim_{ t \to 0 } y_{o}(t) = \lim_{ s \to \infty } sY_{o}(s) = \lim_{ 
 \end{align}$
 
 ::::
+

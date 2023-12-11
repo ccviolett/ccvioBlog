@@ -9,13 +9,13 @@ order: 40
 瞬态性能指标是以阶跃信号为典型输入信号定义的。
 ## 典型输入信号
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111013117.png)
+![](/assets/images/match/subjects/ControlEngineering/83ACD5E28E202312111013117.png)
 
 ## 一阶系统的瞬态响应
 
 一阶系统指能够用一阶微分方程描述的系统，它的典型形式是一阶惯性环节。
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111027493.png)
+![](/assets/images/match/subjects/ControlEngineering/bcCBAb346b202312111027493.png)
 
 $$
 T \frac{dx_{0}(t)}{dt}+x_{0}(t)=x_{i}(t)
@@ -29,7 +29,7 @@ $$
 
 对输入信号进行拉氏变换，通过传递函数后进行拉氏反变换得到输出响应
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111017837.png)
+![](/assets/images/match/subjects/ControlEngineering/3dC6BE49Bb202312111017837.png)
 
 等价关系
 
@@ -62,7 +62,7 @@ $G_{k}(s) = \frac{G(s)}{1+G(s)} = \frac{\frac{4}{s(s+5)}}{1+\frac{4}{s(s+5)}}=\f
 
 二阶系统指用二阶微分方程描述的系统，它的形式是二阶振荡环节。
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310208.png)
+![](/assets/images/match/subjects/ControlEngineering/c67aFCE8eE202312102310208.png)
 
 形式一：$\frac{X_{o}(s)}{X_{i}(s)} = \frac{\omega_{n}^{2}}{s^{2}+2\zeta\omega_{n}s+\omega^{2}}$，其中$\zeta$为阻尼比；$\omega_n$为无阻尼自振角频率
 
@@ -75,10 +75,10 @@ $G_{k}(s) = \frac{G(s)}{1+G(s)} = \frac{\frac{4}{s(s+5)}}{1+\frac{4}{s(s+5)}}=\f
 二阶系统特征方程：$s^{2}+2\zeta\omega_{n}s+\omega^{2}=0$，特征方程的根$s_{1, 2} = -\zeta\omega_{n} \pm \omega \sqrt{ \zeta^{2}-1 }$
 ### 二阶系统的极点分布
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111030240.png)
+![](/assets/images/match/subjects/ControlEngineering/51c0E5BbB0202312111030240.png)
 ### 阻尼系数与特征根的关系
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111019279.png)
+![](/assets/images/match/subjects/ControlEngineering/16bf2eAb50202312111019279.png)
 
 一般希望二阶系统工作在$\zeta = 0.4$到$0.8$的欠阻尼状态。理想阻尼比为$0.707$
 
@@ -90,7 +90,7 @@ $G_{k}(s) = \frac{G(s)}{1+G(s)} = \frac{\frac{4}{s(s+5)}}{1+\frac{4}{s(s+5)}}=\f
 
 求如图所示的闭环传递函数，并求出闭环阻尼比为$0.5$时所对应的$K$值。
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111030240.png)
+![](/assets/images/match/subjects/ControlEngineering/51c0E5BbB0202312111030240.png)
 
 解：$G(s) = \frac{X_{o}(s)}{X_{i}(s)} = \frac{\frac{K}{s(0.1s + 1)}}{1 + \frac{K}{s(0.1s+1)}} = \frac{K}{0.1s^{2}+s+K} = \frac{10K}{s^{2}+10s+10K}$
 
@@ -126,18 +126,18 @@ $x_{o}(t) = \left( 1 - \frac{e^{-\zeta\omega_{n}t}}{\sqrt{ 1-\zeta^{2} }}\sin(\o
 
 其中$\varphi$为复根与虚轴的夹角，如图：
 
-![截屏2023-11-11 17.52.42.png](https://cdn.nlark.com/yuque/0/2023/png/40485871/1699696366036-73e27265-b50a-4a93-8f7e-448812ced396.png#averageHue=%23f8f7f7&clientId=u714dc8c3-8dfc-4&from=drop&height=156&id=ub8dc1f96&originHeight=305&originWidth=390&originalType=binary&ratio=2&rotation=0&showTitle=false&size=32346&status=done&style=none&taskId=uf9d0ca6f-6132-490d-8195-7a60f6f2f63&title=&width=199)
+![截屏2023-11-11 17.52.42.png](/assets/images/match/subjects/ControlEngineering/A8552020eB1699696366036-73e27265-b50a-4a93-8f7e-448812ced396.png)
 
 我们可以得到瞬态响应曲线如图：
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310200.png)
+![](/assets/images/match/subjects/ControlEngineering/aAD0fF4FeA202312102310200.png)
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111020713.png)
+![](/assets/images/match/subjects/ControlEngineering/177EC90bd6202312111020713.png)
 
 ::: details 例题4（二阶系统的瞬态响应指标）
 
 某系统如图所示，试求其无阻尼自振角频率$\omega_n$，阻尼比$\zeta$，超调量$M_p$，峰值时间$t_p$，调整时间$t_s$（进入$\pm5\%$的误差带）
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310185.png)
+![](/assets/images/match/subjects/ControlEngineering/ED0050419A202312102310185.png)
 
 解：$\frac{X_{o}(s)}{X_{i}(s)} = \frac{\frac{100}{s(50s+4)}}{1 + \frac{100}{s(50s + 4)}\cdot_{0}.02} = \frac{100}{50s^{2}+4s+2} = \frac{2}{s^{2}+2\times 0.2 \times 0.2s + 0.04}$
 
@@ -164,3 +164,4 @@ $M_{p} = e^{-\frac{\zeta \pi}{\sqrt{ 1-\zeta^{2} }}}\cdot 100 \% = 16.3 \%$
 
 $t_{p} = \frac{\pi}{\omega_{d}} = \frac{\pi}{\omega _{n}\sqrt{ 1-\zeta^{2} }} \approx 0.363s$
 :::
+

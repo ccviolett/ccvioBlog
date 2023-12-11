@@ -13,8 +13,9 @@ order: 30
 - 各前向通道传递函数的乘积不变
 - 各回路传递函数的乘积保持不变
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310191.png)
+![](/assets/images/match/subjects/ControlEngineering/EED7171C5d202312102310191.png)
 
 由内而外简化
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111007969.png)
+![](/assets/images/match/subjects/ControlEngineering/bd460D4BeE202312111007969.png)
+

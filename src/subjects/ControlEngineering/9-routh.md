@@ -98,7 +98,7 @@ $$
 ::: details 例题3（含参数的劳斯判据）
 设某反馈控制系统如下图所示，试计算使系统稳定的$K$值范围
 
-![截屏2023-11-14 22.07.13.png](https://cdn.nlark.com/yuque/0/2023/png/40485871/1699970838418-26f5eb98-782b-4096-9c70-01a3add3d3ba.png#averageHue=%23f0f0f0&clientId=u0cab273d-dc73-4&from=drop&height=104&id=uee511446&originHeight=129&originWidth=404&originalType=binary&ratio=2&rotation=0&showTitle=false&size=15653&status=done&style=none&taskId=ud87d59aa-f3d7-41ca-939a-d23319b3304&title=&width=326)
+![截屏2023-11-14 22.07.13.png](/assets/images/match/subjects/ControlEngineering/74089A21BD1699970838418-26f5eb98-782b-4096-9c70-01a3add3d3ba.png)
 
 解：系统闭环传递函数为$\frac{X_{o}(s)}{X_{i}(s)} = \frac{K}{s(s + 1)(s + 2) + K}$，其特征方程为：
 
@@ -172,3 +172,4 @@ $$
 
 故系统临界稳定
 ::::
+

@@ -50,7 +50,7 @@ G(s) = \frac{X_o(s)}{X_i(s)} = \frac{b_{0}s^m+b_{1}s ^{m-1}+\dots+b_{m-1}s+b_{m}
 
 ### 机械系统的数学模型
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312110023642.png)
+![](/assets/images/match/subjects/ControlEngineering/F34fdfAAdD202312110023642.png)
 
 :::: details 例题1（机械系统的数学模型）
 
@@ -58,7 +58,7 @@ G(s) = \frac{X_o(s)}{X_i(s)} = \frac{b_{0}s^m+b_{1}s ^{m-1}+\dots+b_{m-1}s+b_{m}
 
 @tab 题 1
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312110048183.png)
+![](/assets/images/match/subjects/ControlEngineering/f4FbD54096202312110048183.png)
 
 解：有$D_{1}[\dot{x}_{i}(t)- \dot{x}_{o}(t)] - D_{2}\dot{x}_{o}(t) = m\ddot{x}(t)$
 
@@ -68,7 +68,7 @@ G(s) = \frac{X_o(s)}{X_i(s)} = \frac{b_{0}s^m+b_{1}s ^{m-1}+\dots+b_{m-1}s+b_{m}
 
 @tab 题 2
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312110048070.png)
+![](/assets/images/match/subjects/ControlEngineering/D08F7a569C202312110048070.png)
 
 解：有
 $$
@@ -83,7 +83,7 @@ $$
 
 @tab 题 3
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312110051861.png)
+![](/assets/images/match/subjects/ControlEngineering/7e6A8F50Fa202312110051861.png)
 
 解：设$k_1$和$D$之间的位移为$x(t)$
 
@@ -97,7 +97,7 @@ $$
 
 ### 电路系统的数学模型
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312110026746.png)
+![](/assets/images/match/subjects/ControlEngineering/e0850E1caC202312110026746.png)
 
 ::::: details 例题2（电路系统的数学模型）
 
@@ -107,7 +107,7 @@ $$
 
 求R-L-C 无源电路网络的传递函数。
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310206.png)
+![](/assets/images/match/subjects/ControlEngineering/27AFB5DFDB202312102310206.png)
 
 解：
 
@@ -136,7 +136,7 @@ $G(s) = \frac{U_{o}(s)}{U_{i}(s)} = \frac{\frac{1}{Cs}}{Ls + R + \frac{1}{Cs}}$
 
 求R-L-C 无源电路网络的传递函数。
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312110051810.png)
+![](/assets/images/match/subjects/ControlEngineering/EcdFeeFd58202312110051810.png)
 
 
 解：
@@ -155,7 +155,7 @@ $$
 
 求R-L-C 有源电路网络的传递函数。
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310230.png)
+![](/assets/images/match/subjects/ControlEngineering/8eBF7DD3aD202312102310230.png)
 
 **拉氏变换法**
 
@@ -172,7 +172,7 @@ $G(s) = \frac{U_{o}(s)}{U_{i}(s)} = \frac{-\frac{1}{Cs}}{R} = -\frac{1}{RCs}$
 
 求R-L-C 有源电路网络的传递函数。
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310226.png)
+![](/assets/images/match/subjects/ControlEngineering/dCEE6Ab48a202312102310226.png)
 
 解：
 

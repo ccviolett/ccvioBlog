@@ -13,7 +13,7 @@ order: 60
 
 #### 系统的频率特性的表现形式
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111134568.png)
+![](/assets/images/match/subjects/ControlEngineering/F434d569Df202312111134568.png)
 
 系统的频率特性是一种复变函数，设$U(\omega)$为实部，称为实频特性，$V(\omega)$为虚部，称为虚频特性。
 
@@ -35,7 +35,7 @@ $$\phi(\omega) = \angle G(j\omega) = arctan \left [ \frac{V(\omega)}{U(\omega)} 
 
 求下图的频率特性。
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111134674.png)
+![](/assets/images/match/subjects/ControlEngineering/1a50190b97202312111134674.png)
 
 解：如图所示系统传递函数，通过复阻抗法可求得为：
 
@@ -90,3 +90,4 @@ $$
 
 故$x_{o}(t) = \frac{\sqrt{ 2 }}{4}\sin\left( \frac{2}{3}t \right)$
 :::
+

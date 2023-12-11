@@ -18,7 +18,7 @@ $$
 
 ## 典型环节的伯德图
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312111148028.png)
+![](/assets/images/match/subjects/ControlEngineering/5C23B3A15A202312111148028.png)
 
 ### 二阶振荡环节
 
@@ -38,7 +38,7 @@ $$
 
 其  Bode 图如下：
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310203.png)
+![](/assets/images/match/subjects/ControlEngineering/F7F24abb6A202312102310203.png)
 
 ## 绘制伯德图
 
@@ -67,7 +67,7 @@ $$
 
 有$20\lg K = 20\lg 3 \approx 9.5$
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310183.png)
+![](/assets/images/match/subjects/ControlEngineering/eDa7B5FBf4202312102310183.png)
 :::
 
 ::: details 例题2（含积分环节的伯德图绘制）
@@ -82,7 +82,7 @@ $$
 
 有$20\lg K = 20\lg 50 \approx 40$
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310175.png)
+![](/assets/images/match/subjects/ControlEngineering/00AFC4ffEf202312102310175.png)
 :::
 
 ## 最小相位系统
@@ -100,15 +100,16 @@ $$
 
 @tab 题 1
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310207.png)
+![](/assets/images/match/subjects/ControlEngineering/fB3C97fB25202312102310207.png)
 
 解：$G(s) = \frac{1000\left( \frac{1}{400}s + 1 \right)}{\left( \frac{1}{2}s + 1 \right)\left( \frac{1}{200}s + 1 \right)\left( \frac{1}{4000}s + 1 \right)}$
 
 @tab 题 2
 
-![](https://ccviolett-1307804825.cos.ap-shanghai.myqcloud.com/img/202312102310152.png)
+![](/assets/images/match/subjects/ControlEngineering/5DfF4DdDdB202312102310152.png)
 
 解：$G(s) = \frac{100\left( \frac{1}{100}s + 1 \right)}{s^{2}\left( \frac{1}{1000}s + 1 \right)}$
 :::
 
 ::::
+
