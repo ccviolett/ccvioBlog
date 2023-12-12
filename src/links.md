@@ -1,5 +1,5 @@
 ---
-title: 博客
+title: 博客链接
 ---
 
 - [主页 | Mr.Hope (mister-hope.com)](https://mister-hope.com/)
