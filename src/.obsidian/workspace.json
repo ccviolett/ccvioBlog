@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f3143ffe17ae8d20",
+        "id": "ba6f6f8938e8d67d",
         "type": "tabs",
         "children": [
           {
-            "id": "120244da9e126b6c",
+            "id": "d4d27483bdaedcce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "subjects/NumericalControl/test/neuq/2023-2024-F.md",
+                "file": "subjects/EngineeringTesting/test.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.50390243530273
+    "width": 231.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "1888c7be6e522785",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "subjects/NumericalControl/test/neuq/2023-2024-F.md",
+                "file": "subjects/EngineeringTesting/test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "subjects/NumericalControl/test/neuq/2023-2024-F.md"
+                "file": "subjects/EngineeringTesting/test.md"
               }
             }
           },
@@ -143,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "subjects/NumericalControl/test/neuq/2023-2024-F.md",
+                "file": "subjects/EngineeringTesting/test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,8 +197,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "120244da9e126b6c",
+  "active": "d4d27483bdaedcce",
   "lastOpenFiles": [
+    "subjects/EngineeringTesting/4.md",
+    "subjects/EngineeringTesting/test.md",
+    "subjects/EngineeringTesting/2.md",
+    "subjects/EngineeringTesting/1.md",
+    "subjects/NumericalControl/test/neuq/2023-2024-F.md",
     "links.md",
     "subjects/MachineryManufacturing/2023test.md",
     "subjects/MachineryManufacturing/all.md",
@@ -209,7 +215,6 @@
     "subjects/NumericalControl/README.md",
     "subjects/NumericalControl/2-programming.md",
     "subjects/ControlEngineering/test/README.md",
-    "subjects/NumericalControl/test/neuq/2023-2024-F.md",
     "subjects/ControlEngineering/test/neuq/2023-2024-F.md",
     "subjects/NumericalControl/test/neuq/2023.md",
     "subjects/NumericalControl/6-machine_tool.md",
@@ -221,10 +226,6 @@
     "subjects/NumericalControl/2.md",
     "subjects/NumericalControl/1.md",
     "subjects/NumericalControl/6.md",
-    "subjects/NumericalControl/5.md",
-    "subjects/NumericalControl/4.md",
-    "subjects/NumericalControl/1 copy 5.md",
-    "subjects/NumericalControl/1 copy 4.md",
     "assets/image/a.JPG",
     "assets/image/IMG_1060.JPG",
     "assets/image",
