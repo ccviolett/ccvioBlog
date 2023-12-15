@@ -1,5 +1,15 @@
 import { sidebar } from "vuepress-theme-hope";
 
+function clink(text, icon, prefix) : { 
+  text, icon, prefix, collapsible, children
+} {
+  return {
+    text, icon, prefix,
+    collapsible: true,
+    children: "structure"
+  }
+}
+
 export default sidebar({
   "/": [
     "",
@@ -16,14 +26,14 @@ export default sidebar({
       prefix: "posts/",
       children: "structure",
     },
-    {
-      text: "学科",
-      icon: "book",
-      prefix: "subjects/",
-      children: "structure",
-    },
     "intro",
     "slides",
     "links",
   ],
+  "/subjects/": [
+    clink("控制工程基础", "book", "CE"),
+    clink("数控技术", "book", "NC"),
+    clink("机械制造技术", "book", "MM"),
+    clink("工程测试技术", "book", "ET"),
+  ]
 });

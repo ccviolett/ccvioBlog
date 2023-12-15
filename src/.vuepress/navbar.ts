@@ -3,6 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   "/demo/",
+  "/subjects/",
   {
     text: "博客",
     icon: "pen-to-square",

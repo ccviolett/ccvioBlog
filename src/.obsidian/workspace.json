@@ -11,13 +11,8 @@
             "id": "d4d27483bdaedcce",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "subjects/EngineeringTesting/test.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -114,7 +109,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "subjects/EngineeringTesting/test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "subjects/EngineeringTesting/test.md"
-              }
+              "state": {}
             }
           },
           {
@@ -144,7 +136,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "subjects/EngineeringTesting/test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,42 +190,44 @@
   },
   "active": "d4d27483bdaedcce",
   "lastOpenFiles": [
-    "subjects/EngineeringTesting/4.md",
+    "subjects/README.md",
     "subjects/EngineeringTesting/test.md",
-    "subjects/EngineeringTesting/2.md",
-    "subjects/EngineeringTesting/1.md",
-    "subjects/NumericalControl/test/neuq/2023-2024-F.md",
-    "links.md",
-    "subjects/MachineryManufacturing/2023test.md",
-    "subjects/MachineryManufacturing/all.md",
-    "subjects/MachineryManufacturing/2023年机械制造技术基础复习.md",
-    "subjects/MachineryManufacturing/README.md",
+    "subjects/ET/test.md",
+    "subjects/ET/README.md",
+    "subjects/ET/5.md",
+    "subjects/ET/4.md",
+    "subjects/ET/3.md",
+    "subjects/ET/2.md",
+    "subjects/ET/1.md",
+    "subjects/ET/0.md",
+    "subjects/ET",
+    "subjects/MM/README.md",
+    "subjects/MM/2023test.md",
+    "subjects/MM",
+    "subjects/NC/test/neuq/README.md",
+    "subjects/NC/test/neuq/2023-2024-F.md",
+    "subjects/NC/test/neuq",
+    "subjects/NC/test/README.md",
+    "subjects/NC/test",
+    "subjects/NC/README.md",
+    "subjects/NC/6-machine_tool.md",
+    "subjects/NC/5-fss.md",
+    "subjects/NC/4-cnc.md",
+    "subjects/NC/3-trajectory_control.md",
+    "subjects/NC/2-programming.md",
+    "subjects/NC/1-introduction.md",
+    "subjects/NC",
+    "subjects/CE/test/neuq/README.md",
+    "subjects/CE/test/neuq/2023-2024-F.md",
+    "subjects/CE/test/README.md",
+    "subjects/CE/test/neuq",
+    "subjects/CE/test",
+    "subjects/CE/README.md",
+    "subjects/CE",
     "subjects/MachineryManufacturing",
-    "subjects/NumericalControl/test/neuq/README.md",
-    "subjects/NumericalControl/test/README.md",
-    "subjects/NumericalControl/README.md",
-    "subjects/NumericalControl/2-programming.md",
-    "subjects/ControlEngineering/test/README.md",
-    "subjects/ControlEngineering/test/neuq/2023-2024-F.md",
-    "subjects/NumericalControl/test/neuq/2023.md",
-    "subjects/NumericalControl/6-machine_tool.md",
-    "subjects/NumericalControl/5-fss.md",
-    "subjects/NumericalControl/4-cnc.md",
-    "subjects/NumericalControl/3.md",
-    "subjects/NumericalControl/3-trajectory_control.md",
-    "subjects/NumericalControl/1-introduction.md",
-    "subjects/NumericalControl/2.md",
-    "subjects/NumericalControl/1.md",
-    "subjects/NumericalControl/6.md",
     "assets/image/a.JPG",
     "assets/image/IMG_1060.JPG",
     "assets/image",
-    "assets/img",
-    "assets",
-    "subjects/NumericalControl/test/neuq/未命名",
-    "subjects/NumericalControl/test/neuq",
-    "subjects/NumericalControl/test",
-    "subjects/NumericalControl",
     "android-chrome-512x512.png",
     "subjects/ControlEngineering/test/neuq/Df7a90A16D1699882032058-84e8abf4-44ba-4dad-96d0-cd18d33519a6.png",
     "subjects/ControlEngineering/test/Df7a90A16D1699882032058-84e8abf4-44ba-4dad-96d0-cd18d33519a6.png",
@@ -243,10 +236,8 @@
     "subjects/ControlEngineering/test/3E08C37BF71699881546210-b9bef73a-2305-4f0e-a050-2a1aff82578c.png",
     "subjects/ControlEngineering/test/neuq/3E08C37BF71699881546210-b9bef73a-2305-4f0e-a050-2a1aff82578c.png",
     "subjects/ControlEngineering/test/neuq/c3c9aDe61e1699882854724-f8895c14-3778-4fd1-84bc-aa6d84338ce4.png",
-    "subjects/ControlEngineering/test/neuq/index.assets",
     "机械工程测试技术思维导图.canvas",
     "学习路线.canvas",
-    "未归类/机械工程测试技术/附件",
     "未命名.canvas",
     "概念/产品/风泽中孚/风泽中孚 2023 年 4 月团队招新兼挑战杯红色专项招新.canvas",
     "概念/产品/风泽中孚/2023 挑战杯红色专项思维导图.canvas",

@@ -1,1 +1,0 @@
-export const data = JSON.parse("{\"key\":\"v-cba035f8\",\"path\":\"/src/links.html\",\"title\":\"博客链接\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"博客链接\"},\"headers\":[],\"git\":{\"updatedTime\":1702346345000,\"contributors\":[{\"name\":\"Carmine Carlo\",\"email\":\"3340751717@qq.com\",\"commits\":3}]},\"filePathRelative\":\"src/links.md\"}")

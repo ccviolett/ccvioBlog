@@ -1,1 +1,0 @@
-export const data = JSON.parse("{\"key\":\"v-417e6ba4\",\"path\":\"/src/subjects/EngineeringTesting/\",\"title\":\"工程测试技术\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"工程测试技术\",\"index\":false},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"src/subjects/EngineeringTesting/README.md\"}")
