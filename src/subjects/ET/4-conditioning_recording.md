@@ -87,27 +87,6 @@ h(t) \leftrightarrow H(\omega)
 \end{cases} \to x(t) * h(t) \leftrightarrow X(f) * H(f)
 $$
 
-#### $\delta$ 函数
-
-$\delta$ 函数是一个理想函数，是物理不可实现信号，幅值为无限，持续时间为 0 的脉冲。
-
-$$
-\delta(t) = \begin{cases}
-\infty  & t = 0 \\
-0 & t \not = 0
-\end{cases}
-$$
-
-$$
-\int_{-\infty}^{\infty} \delta(t) \, dt  = 1
-$$
-1. 乘积特性：$f(t)\delta(t) = f(0)\delta(t)$, $f(t)\delta(t - t_{0}) = f(t_{0})\delta(t - t_{0})$
-2. 积分特性（抽样特性）：$\int _{-\infty}^{\infty} f(t)\delta (t) \, dt$, $\int _{-\infty}^{\infty} f(t) \delta(t - t_{0}) \, dt = f(t_{0})$，即 $x(t) * \delta(t - t_{0}) = x(t - t_{0})$
-3. 拉氏变换：$\Delta(s) = \int _{0-}^{\infty} \delta(t)e^{-st} \, dt = 1$
-4. 傅氏变换：$\Delta(f) = \int _{-\infty}^{\infty}\delta(t) e^{-j 2\pi ft} \, dt = 1$
-
-一个函数与单位脉冲函数卷积的结果，就是将其图像由坐标原点平移至该脉冲函数处。
-
 ### 调幅调制与解调过程
 
 $$
@@ -118,6 +97,10 @@ x(t) \cdot \cos(2\pi f_{0} t)  & \Leftrightarrow \frac{1}{2}X(f) * \delta(f - f_
  & = \frac{1}{2}X(f - f_{0}) + \frac{1}{2} X(f + f_{0})
 \end{align}
 $$
+
+::: note
+$\delta$ 函数见 [第一章 信号描述与分析基础](1-signal)
+:::
 ### 载波频率与最高频率
 
 载波频率 $f_{0}$ 必须高于信号中的最高频率 $f_{max}$，否则会出现混叠现象（“混音”）。

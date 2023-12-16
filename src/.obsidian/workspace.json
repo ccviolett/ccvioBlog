@@ -8,32 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7ec12d107a1b76ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "subjects/ET/problem/README.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "617869b5b378aeed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "subjects/ET/1-signal.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e799ea260f9426b9",
             "type": "leaf",
             "state": {
@@ -60,12 +34,12 @@
             }
           },
           {
-            "id": "99c1f2918718fdf1",
+            "id": "3f7978dfa6008999",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "subjects/ET/4-conditioning_recording.md",
+                "file": "wiki/vuepress.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "subjects/ET/5-analysis_processing.md",
+                "file": "subjects/ET/4-conditioning_recording.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -144,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.50390243530273,
-    "collapsed": true
+    "width": 231.50390243530273
   },
   "right": {
     "id": "1888c7be6e522785",
@@ -180,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "subjects/ET/1-signal.md",
+                "file": "wiki/vuepress.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "subjects/ET/1-signal.md"
+                "file": "wiki/vuepress.md"
               }
             }
           },
@@ -210,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "subjects/ET/1-signal.md",
+                "file": "wiki/vuepress.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -263,15 +236,34 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "617869b5b378aeed",
+  "active": "3f7978dfa6008999",
   "lastOpenFiles": [
-    "subjects/ET/problem/README.md",
-    "subjects/ET/0-introduction.md",
-    "subjects/ET/5-analysis_processing.md",
-    "subjects/ET/4-conditioning_recording.md",
+    "posts/markdown_best_practice.md",
+    "subjects/ET/1-signal.md",
+    "subjects/ET/_images/截屏2023-12-16 22.29.42.png",
     "subjects/ET/3-sensor.md",
     "subjects/ET/2-test_system.md",
-    "subjects/ET/1-signal.md",
+    "subjects/ET/4-conditioning_recording.md",
+    "subjects/ET/_images/2023-12-16-ET-00006.png",
+    "subjects/ET/_images/2023-12-16-ET-00008.png",
+    "subjects/ET/_images/2023-12-16-ET-00005.png",
+    "subjects/ET/_images/2023-12-16-ET-00004.png",
+    "subjects/ET/_images/2023-12-16-ET-00003.png",
+    "subjects/ET/_images/2023-12-16-ET-00002.png",
+    "subjects/ET/_images/2023-12-16-ET-00001.png",
+    "subjects/ET/5-analysis_processing.md",
+    "subjects/ET/_images/截屏2023-12-16 21.48.48.png",
+    "subjects/ET/_images/截屏2023-12-16 21.47.52.png",
+    "subjects/ET/0-introduction.md",
+    "subjects/ET/problem/README.md",
+    "_images/截屏2023-12-16.md",
+    "_images",
+    "subjects/ET/_images",
+    "subjects/ET/_image",
+    "subjects/ET/image",
+    "subjects/ET/assets",
+    "subjects/ET/asset",
+    "租房.md",
     "subjects/ET/problem",
     "subjects/ET/test/neuq/README.md",
     "subjects/ET/test/README.md",
@@ -286,31 +278,11 @@
     "wiki/disable.md",
     "wiki/README.md",
     "wiki",
-    "posts/markdown_best_practice.md",
     "demo/markdown_best_practice.md",
     "posts/apple/1.md",
     "posts/banana/1.md",
-    "subjects/ET/4-condition.md",
-    "subjects/ET/test/neuq/2023-2024-1.md",
-    "subjects/ET/test/neuq/test.md",
     "subjects/ET/test/neuq",
     "subjects/ET/test",
-    "subjects/ET",
-    "subjects/MM",
-    "subjects/NC/test/neuq",
-    "subjects/NC/test",
-    "subjects/NC",
-    "subjects/CE/test/neuq",
-    "assets/image/a.JPG",
-    "assets/image/IMG_1060.JPG",
-    "android-chrome-512x512.png",
-    "subjects/ControlEngineering/test/neuq/Df7a90A16D1699882032058-84e8abf4-44ba-4dad-96d0-cd18d33519a6.png",
-    "subjects/ControlEngineering/test/Df7a90A16D1699882032058-84e8abf4-44ba-4dad-96d0-cd18d33519a6.png",
-    "subjects/ControlEngineering/test/neuq/2a32Bfb4dC1699881743563-78b8e770-ea38-4820-a81e-d2bfb39d072f.png",
-    "subjects/ControlEngineering/test/2a32Bfb4dC1699881743563-78b8e770-ea38-4820-a81e-d2bfb39d072f.png",
-    "subjects/ControlEngineering/test/3E08C37BF71699881546210-b9bef73a-2305-4f0e-a050-2a1aff82578c.png",
-    "subjects/ControlEngineering/test/neuq/3E08C37BF71699881546210-b9bef73a-2305-4f0e-a050-2a1aff82578c.png",
-    "subjects/ControlEngineering/test/neuq/c3c9aDe61e1699882854724-f8895c14-3778-4fd1-84bc-aa6d84338ce4.png",
     "机械工程测试技术思维导图.canvas",
     "学习路线.canvas",
     "未命名.canvas",

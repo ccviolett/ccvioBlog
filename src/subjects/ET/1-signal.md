@@ -155,7 +155,7 @@ $$
 :::: details 例 1
 求如图所示的周期方波信号 $x(t)$ 的傅里叶级数。
 
-![](/assets/images/match/subjects/ET/2023-12-16-ET-00009.png)
+![](_images/2023-12-16-ET-00009.png)
 
 解：信号 $x(t)$ 在它的一个周期内的表达式为：
 
@@ -200,7 +200,7 @@ $$
 
 其幅值谱图如下：
 
-![](/assets/images/match/subjects/ET/2023-12-16-ET-00008.png)
+![](_images/2023-12-16-ET-00008.png)
 
 @tab 复指数函数展开式
 
@@ -228,7 +228,7 @@ $$
 :::: details 例2
 求周期矩形脉冲的频谱，设周期矩形脉冲的周期为 $T$，脉冲宽度为 $\tau$。
 
-![](/assets/images/match/subjects/ET/2023-12-16-ET-00010.png)
+![](_images/2023-12-16-ET-00010.png)
 
 解：
 
@@ -247,9 +247,9 @@ x(t) = \sum_{n = -\infty}^{\infty} C_{n} e^{jn\omega_{0}t} = \frac{\tau}{T} \sum
 $$
 
 ::: tip 脉冲周期与脉宽改变时的频谱变化
-![](/assets/images/match/subjects/ET/2023-12-16-ET-00011.png)
+![](_images/2023-12-16-ET-00011.png)
 
-![](/assets/images/match/subjects/ET/2023-12-16-ET-00012.png)
+![](_images/2023-12-16-ET-00012.png)
 :::
 
 ::::
@@ -278,24 +278,36 @@ x(t) &  = \sum_{n = -\infty}^{\infty} C_{n} e^{jn\omega_{0}t}  \\
 	 & = \frac{1}{2\pi} \int ^{\infty}_{-\infty} X(\omega)e^{j\omega t} \, d\omega
 \end{align}
 $$
-称 $X(\omega) = \int _{-\infty}^{\infty}x(t)e^{-j\omega t} \, dt$ 为 $x(t)$ 的傅里叶变换，称 $x(t)$ 为 $X(\omega)$ 的逆傅立叶变换，记做：
+
+称 $X(\omega) = \int _{-\infty}^{\infty}x(t)e^{-j\omega t} \, dt$ 为 $x(t)$ 的傅里叶变换，称 $x(t) = \frac{1}{2\pi} \int _{-\infty}^{\infty} X(\omega)e^{j\omega t} \, d\omega$ 为 $X(\omega)$ 的逆傅立叶变换，记做：
 
 $$
 x(t) \leftrightarrow  X(\omega)
 $$
 
-### 傅里叶变换常见结论
+同时，我们还可以代入 $\omega = 2\pi f$，得到 $t$ 和 $f$ 之间的傅立叶变换：
+
+$$
+x(t) \leftrightarrow  X(f)
+$$
+由于 $X(f)$ 一般为实变量 $f$ 的复函数，故可将其写为：
+
+$$
+X(f) = |X(f)| e^{j\varphi(f)}
+$$
+
+### 傅里叶变换的形式
 
 $$
 \begin{cases}
 X(\omega) &  = \int_{-\infty}^{\infty} x(t) e^{-j\omega t} \, dt  \\
-X(f)  & = \int _{-\infty}^{\infty} x(t) e^{-j 2\pi ft} \, dt  \\
+x(t) &  = \frac{1}{2\pi} \int ^{\infty}_{-\infty} X(\omega) e^{j\omega t} \, d\omega  \\
 \end{cases}
 $$
 
 $$
 \begin{cases}
-x(t) &  = \frac{1}{2\pi} \int ^{\infty}_{-\infty} X(\omega) e^{j\omega t} \, d\omega  \\
+X(f)  & = \int _{-\infty}^{\infty} x(t) e^{-j 2\pi ft} \, dt  \\
 x(t) &  = \int _{-\infty}^{\infty} X(f) e^{j 2\pi ft} \, df  \\
 \end{cases}
 $$
@@ -308,44 +320,144 @@ $$
 阶跃信号仅取单边利用傅里叶变换性质计算
 :::
 
+::: details 例 4
+求图示单边指数函数的频谱 
+
+![](_images/截屏2023-12-16%2021.30.33.png)
+
+解：
+
+单边指数函数 $x(t) = e^{-at}\zeta(t) \, (a > 0)$
+
+$$
+\begin{align}
+X(f) &  = \int _{-\infty}^{\infty} x(t) e^{-j 2\pi ft} \, dt  \\
+	 & = \int _{-\infty}^{\infty} e^{-at}\zeta(t) e^{-j 2\pi ft} \, dt \\
+  &  = \int _{0}^{\infty} e^{-at} e^{-j 2\pi ft} \, dt \\
+	 & = \frac{1}{a + j 2\pi f}
+\end{align}
+$$
+
+故
+
+$$
+|X(f)| = \frac{1}{\sqrt{ a^{2} + (2\pi f)^{2} }}
+$$
+
+$$
+\varphi(f) = -\arctan\left( \frac{2\pi f}{a} \right)
+$$
+
+![](_images/截屏2023-12-16%2021.35.46.png)
+:::
+
+::: details 例 5
+如图所示为一矩形脉冲（窗函数、门函数），求该函数的频谱。
+
+![](_images/截屏2023-12-16%2021.37.05.png)
+
+解：
+
+矩形脉冲函数：
+
+$$
+g_{T}(t) = \begin{cases}
+1, \, \lvert t \rvert < \frac{T}{2} \\
+0, \, \text{其他}
+\end{cases}
+$$
+
+故
+
+$$
+\begin{align}
+G_{T}(\omega) &  = \int _{-\infty}^{\infty} g_{T}(t) e^{-j\omega t} \, dt  \\
+	 & = \int _{-T /2}^{T/2} 1 \cdot e^{-j\omega t} \, dt  \\
+	 & = \int _{-T /2}^{0}e^{-j\omega t} \, dt + \int _{0}^{T/2}e^{-j\omega t} \, dt \\ \\
+	 & = \frac{1}{-j\omega}(e^{-j\omega T/2} - e^{+j\omega T/2}) \\
+	 & = T \cdot \frac{\sin\left( \frac{\omega T}{2} \right)}{\left( \frac{\omega T}{2} \right)} \\
+	 & = T\sin c\left( \frac{\omega T}{2} \right)
+\end{align}
+$$
+
+其幅频谱和相频谱分别为：
+
+$$
+\lvert G_{T}(\omega)\rvert = T \left \lvert \sin c\left( \frac{\omega T}{2} \right) \right \rvert
+$$
+$$
+\varphi(\omega) = \begin{cases}
+0, \, \sin c\left( \frac{\omega T}{2} \right) > 0 \\
+\pi, \, \sin c\left( \frac{\omega T}{2} \right) < 0  \\
+
+\end{cases}
+$$
+
+![](_images/截屏2023-12-16%2021.42.58.png)
+:::
+
+::: tip 矩形脉冲函数的傅立叶变换
+矩形脉冲函数与 $\sin c$ 函数之间是一对傅立叶变换对，即：
+
+$$
+rect(t) \leftrightarrow  \sin c(\omega)
+$$
+:::
+
+::: tip 单边指数函数与矩形脉冲的的傅立叶变换
+![](_images/截屏2023-12-16%2022.29.42.png)
+:::
+
 ### 傅立叶变换的性质
 
-| 性质             | 说明                                                                                                                                                                                                                                |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 对称性（对偶性） | 若有 $x(t) \leftrightarrow X(\omega)$，则有 $X(t) \leftrightarrow 2\pi x(-\omega)$                                                                                                                                                  |
-| 线性             | 若有 $x_{1}(t) \leftrightarrow X_{1}(\omega)$、$x_{2}(t) \leftrightarrow X_{2}(\omega)$，则有 $ax_{1}(t) + bx_{2}(t) \leftrightarrow aX_{1}(\omega) + bX_{2}(\omega)$                                                               |
-| 尺度变换性       | 如果有 $x(t) \leftrightarrow X(\omega)$，则对于实常数 $a$，有 $x(at) \leftrightarrow \frac{1}{\lvert a \rvert} X\left( \frac{\omega}{a} \right)$                                                                                    |
-| 奇偶性           | 若 $x(t)$ 为时间 $t$ 的实函数，$x(t)$ 和 $X(\omega)$ 的奇偶性相同                                                                                                                                                                   |
-| 时移性           | 如果有 $x(t) \leftrightarrow X(\omega)$，则 $x(t - t_{0}) \leftrightarrow X(\omega) e^{-j\omega t_{0}}$                                                                                                                             |
-| 频率性（调制性） | 如果 $x(t) \leftrightarrow X(\omega)$，则 $x(t) e^{j\omega_{0}}t \leftrightarrow X(\omega - \omega_{0})$，其中 $\omega_{0}$ 为常数。                                                                                                |
+|       性质       |                            若 $x(t) \leftrightarrow X(\omega)$，则有                            |
+|:----------------:|:-----------------------------------------------------------------------------------------------:|
+| 对称性（对偶性） |                             $X(t) \leftrightarrow 2\pi x(-\omega)$                              |
+|    尺度变换性    |       $x(at) \leftrightarrow \frac{1}{\lvert a \rvert} X\left( \frac{\omega}{a} \right)$        |
+|      时移性      |                   $x(t - t_{0}) \leftrightarrow X(\omega) e^{-j\omega t_{0}}$                   |
+| 频率性（调制性） |   $x(t) e^{j\omega_{0}}t \leftrightarrow X(\omega - \omega_{0})$，其中 $\omega_{0}$ 为常数。    |
+|     时域微分     |                      $\frac{dx(t)}{dt} \leftrightarrow  j\omega X(\omega)$                      |
+|     时域积分     | $\int _{-\infty}^{t}x(t) \, dt \leftrightarrow  \frac{1}{j\omega} X(\omega)$，条件是 $X(0) = 0$ |
+|     n 阶微分     |                $\frac{d^{n}x(t)}{dt^{n}} \leftrightarrow (j\omega)^{n}X(\omega)$                |
+
+
+| 性质   | 说明                                                                                                                                                                  |
+| ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 线性   | 若有 $x_{1}(t) \leftrightarrow X_{1}(\omega)$、$x_{2}(t) \leftrightarrow X_{2}(\omega)$，则有 $ax_{1}(t) + bx_{2}(t) \leftrightarrow aX_{1}(\omega) + bX_{2}(\omega)$ |
+| 奇偶性 | 若 $x(t)$ 为时间 $t$ 的实函数，$x(t)$ 和 $X(\omega)$ 的奇偶性相同                                                                                                     |
 | 卷积             | 如果有 $x(t) \leftrightarrow X(\omega)$、$h(t) \leftrightarrow H(\omega)$，则存在时域卷积 $x(t) * h(t) \leftrightarrow X(\omega) \cdot H(\omega)$、频域卷积：$x(t) \cdot h(t) \leftrightarrow \frac{1}{2\pi} X(\omega) * H(\omega)$ |
-| 时域微分和积分   | 如果有 $x(t) \leftrightarrow X(\omega)$，则  $\frac{dx(t)}{dt} \leftrightarrow  j\omega X(\omega)$，且 $\int _{-\infty}^{t}x(t) \, dt \leftrightarrow  \frac{1}{j\omega} X(\omega)$，条件是 $X(0) = 0$                                                                                                                                                                                                                                    |
 
 ::: tip 尺度变换性的说明
 
-即若信号 $x(t)$ 在时间轴上被压缩到原信号的 $\frac{1}{a}$，则其频谱函数在频率轴上将展宽 $a$ 倍，而其幅值相应地减少至原信号幅值的 $\frac{1}{|a|}$
+信号的持续时间与信号占有的频带宽成反比。若信号 $x(t)$ 在时间轴上被压缩到原信号的 $\frac{1}{a}$，则其频谱函数在频率轴上将展宽 $a$ 倍，而其幅值相应地减少至原信号幅值的 $\frac{1}{|a|}$
 
-信号的持续时间与信号占有的频带宽成反比
+![](_images/截屏2023-12-16%2021.47.52.png)
 :::
 
+::: details 例 8
+求如图所示矩形脉冲函数的频谱 
 
-::: tip n 阶微分的傅里叶变换公式
+![](_images/截屏2023-12-16%2021.48.48.png)
+
+解：函数表达式为 $x(t) = Arect[t - t_{0}]$，可视为一个中心位于坐标原点的矩形脉冲时移到 $t_{0}$ 点位置。
+
+故根据时移性 $x(t - t_{0}) \leftrightarrow X(\omega)e^{-j\omega t_{0}}$ 可得：
 
 $$
-\frac{d^{n}x(t)}{dt^{n}} \leftrightarrow (j\omega)^{n}X(\omega)
+X(f) = AT\sin c(\pi fT)e^{j 2\pi ft_{0}}
 $$
 
 :::
-
 ## 典型信号的频谱
 
 ### 单位脉冲函数 $\delta(t)$
 
 #### 定义
 
-在 $\Delta$ 时间内激发一面积为 1 的矩形脉冲 $p_{\Delta}(t)$ ，当 $\Delta \to 0$ 时，该矩形脉冲的极限称为单位脉冲函数或 $\delta$ 函数
+在 $\Delta$ 时间内激发一面积为 1 的矩形脉冲 $p_{\Delta}(t)$ ，当 $\Delta \to 0$ 时，该矩形脉冲的极限称为单位脉冲函数或 $\delta$ 函数。
 
-#### 性质
+$\delta$ 函数是一个理想函数，是物理不可实现信号，幅值为无限，持续时间为 0 的脉冲。
+
 
 $$
 \delta(t) = \begin{cases}
@@ -353,39 +465,24 @@ $$
 0,  & t \neq 0
 \end{cases}
 $$
-$$
-\int _{-\infty}^{\infty}\delta(t) \, dt = 1 
-$$
-$$
-\int _{-\infty}^{\infty}x(t)\delta(t - t_{0}) \, dt = x(t_{0}) 
-$$
 
-$$
-X(\omega) = F[\delta(t)] = \int _{-\infty}^{\infty}\delta(t)e^{-j\omega t} \, dt = 1 
-$$
+#### 性质
 
-::: tip
-时移单位脉冲函数 $\delta(t - t_{0}) \leftrightarrow e^{-j\omega t_{0}}$
-$$
-F[\delta(t - t_{0})] = \int _{-\infty}^{\infty} \delta(t - t_{0})e^{-j\omega t} \, dt = e^{-j\omega t_{0}}
-$$
-:::
+|         性质         | 说明                                                                                                                                                              |
+|:--------------------:| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|       单位特性       | $\int _{-\infty}^{\infty}\delta(t) \, dt = 1$ |
+|       乘积特性       | $f(t)\delta(t) = f(0)\delta(t)$，$f(t)\delta(t - t_{0}) = f(t_{0})\delta(t - t_{0})$                                                                              |
+| 积分特性（抽样特性） | $\int _{-\infty}^{\infty} f(t)\delta (t) \, dt = f(0)$，$\int _{-\infty}^{\infty} f(t) \delta(t - t_{0}) \, dt = f(t_{0})$，即 $x(t) * \delta(t - t_{0}) = x(t - t_{0})$ |
+|       拉氏变换       | $\Delta(s) = \int _{0-}^{\infty} \delta(t)e^{-st} \, dt = 1$                                                                                                      |
+|       傅氏变换       | $\Delta(f) = \int _{-\infty}^{\infty}\delta(t) e^{-j 2\pi ft} \, dt = 1$                                                                                          |
 
-$$
-1 \leftrightarrow  2\pi\delta(\omega)
-$$
-$$
-e^{j\omega_{0}t} \leftrightarrow 2\pi \delta(\omega - \omega_{0})
-$$
+一个函数与单位脉冲函数卷积的结果，就是将其图像由坐标原点平移至该脉冲函数处。
+#### 常用傅立叶变换对
 
-#### 卷积
-
-$$
-x(t) * \delta(t) = \delta(t) * x(t) =  x(t)
-$$
-$$
-x(t) * \delta(t - t_{0}) = \delta(t - t_{0}) * x(t) = x(t - t_{0})
-$$
+|                         正变换                         |                               逆变换                                |
+|:------------------------------------------------------:|:-------------------------------------------------------------------:|
+|             $\delta(t) \leftrightarrow 1$              |               $1 \leftrightarrow 2\pi\delta(\omega)$                |
+| $\delta(t - t_{0}) \leftrightarrow e^{-j\omega t_{0}}$ | $e^{j\omega_{0} t} \leftrightarrow 2\pi\delta(\omega - \omega_{0})$ |
 
 ### 余弦函数
 
@@ -398,15 +495,15 @@ $$
 \end{align}
 $$
 
-只有实频谱图，无虚频谱图
+![](_images/2023-12-16-ET-00006.png)
 
-$$
-\cos t \leftrightarrow  \pi\delta(\omega - 1) + \pi \delta(\omega + 1)
-$$
+余弦函数只有实频谱图，正弦函数只有虚频谱图
 
 ### 周期函数
 
 #### 周期函数的频谱
+
+一个周期函数的傅立叶变换由无穷多个位于各谐波频率上的脉冲函数组成。
 
 $$
 \begin{cases}
@@ -424,30 +521,4 @@ $$
 $$
 \sum_{n = -\infty}^{\infty} \delta(t - kT) \leftrightarrow \omega_{0} \sum_{n = -\infty}^{\infty} \delta(\omega - n\omega_{0})
 $$
-
-::: tip
-记住特殊信号的频谱，并利用傅里叶变换性质进行计算
-:::
-
-::: tip
-矩形脉冲（门函数、窗函数）频谱
-
-$$
-g_{T}(t) = \begin{cases}
-1,  & |t| < \frac{T}{2} \\
-0,  & |t| \geq \frac{T}{2}
-\end{cases}
-$$
-
-$$
-|G_{T}(\omega)| = T \left|\sin c\left( \frac{\omega T}{2} \right) \right|
-$$
-
-$$
-\varphi(\omega) = \begin{cases}
-0,  & \sin c\left( \frac{\omega T}{2} \right) > 0 \\
-\pi,  & \sin c\left( \frac{\omega T}{2} \right) < 0 \\
-\end{cases}
-$$
-:::
 

@@ -35,7 +35,7 @@ export default defineUserConfig({
     }),
   ],
 
-  base: "/",
+  base: "/ccvioBlog/",
 
   lang: "zh-CN",
   title: "罗潇阳的博客",
