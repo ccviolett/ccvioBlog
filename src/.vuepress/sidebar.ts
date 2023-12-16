@@ -16,20 +16,15 @@ export default sidebar({
     {
       text: "如何使用",
       icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    },
-    {
-      text: "文章",
-      icon: "book",
-      prefix: "posts/",
+      prefix: "wiki/",
+      link: "wiki/",
       children: "structure",
     },
     "intro",
     "slides",
     "links",
   ],
+  "/posts/": "structure",
   "/subjects/": [
     clink("控制工程基础", "book", "CE"),
     clink("数控技术", "book", "NC"),

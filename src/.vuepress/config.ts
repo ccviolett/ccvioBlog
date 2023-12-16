@@ -3,6 +3,19 @@ import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
+  head: [
+    [
+      'script', {}, `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?5d8b8e54bdda43c4bb376891fc6f17d6";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      `
+    ]
+  ],
 
   plugins: [
     searchProPlugin({
@@ -22,11 +35,11 @@ export default defineUserConfig({
     }),
   ],
 
-  base: "/ccvioBlog/",
+  base: "/",
 
   lang: "zh-CN",
-  title: "CCVioBlog",
-  description: "CCViolett 的博客",
+  title: "罗潇阳的博客",
+  description: "知识自留地",
 
   theme,
 
