@@ -8,14 +8,85 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d4d27483bdaedcce",
+            "id": "7ec12d107a1b76ad",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "subjects/ET/problem/README.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "617869b5b378aeed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "subjects/ET/1-signal.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e799ea260f9426b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "subjects/ET/2-test_system.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a8c8751b7b9218a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "subjects/ET/3-sensor.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "99c1f2918718fdf1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "subjects/ET/4-conditioning_recording.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bce4432fbc6386e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "subjects/ET/5-analysis_processing.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,6 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "subjects/ET/1-signal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +191,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "subjects/ET/1-signal.md"
+              }
             }
           },
           {
@@ -136,6 +210,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "subjects/ET/1-signal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,46 +263,46 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d4d27483bdaedcce",
+  "active": "617869b5b378aeed",
   "lastOpenFiles": [
-    "subjects/README.md",
-    "subjects/EngineeringTesting/test.md",
-    "subjects/ET/test.md",
+    "subjects/ET/problem/README.md",
+    "subjects/ET/0-introduction.md",
+    "subjects/ET/5-analysis_processing.md",
+    "subjects/ET/4-conditioning_recording.md",
+    "subjects/ET/3-sensor.md",
+    "subjects/ET/2-test_system.md",
+    "subjects/ET/1-signal.md",
+    "subjects/ET/problem",
+    "subjects/ET/test/neuq/README.md",
+    "subjects/ET/test/README.md",
     "subjects/ET/README.md",
-    "subjects/ET/5.md",
-    "subjects/ET/4.md",
-    "subjects/ET/3.md",
-    "subjects/ET/2.md",
-    "subjects/ET/1.md",
-    "subjects/ET/0.md",
-    "subjects/ET",
-    "subjects/MM/README.md",
     "subjects/MM/2023test.md",
-    "subjects/MM",
-    "subjects/NC/test/neuq/README.md",
-    "subjects/NC/test/neuq/2023-2024-F.md",
-    "subjects/NC/test/neuq",
-    "subjects/NC/test/README.md",
-    "subjects/NC/test",
-    "subjects/NC/README.md",
-    "subjects/NC/6-machine_tool.md",
-    "subjects/NC/5-fss.md",
-    "subjects/NC/4-cnc.md",
-    "subjects/NC/3-trajectory_control.md",
-    "subjects/NC/2-programming.md",
     "subjects/NC/1-introduction.md",
+    "intro.md",
+    "posts/README.md",
+    "wiki/vuepress.md",
+    "wiki/page.md",
+    "wiki/encrypt.md",
+    "wiki/disable.md",
+    "wiki/README.md",
+    "wiki",
+    "posts/markdown_best_practice.md",
+    "demo/markdown_best_practice.md",
+    "posts/apple/1.md",
+    "posts/banana/1.md",
+    "subjects/ET/4-condition.md",
+    "subjects/ET/test/neuq/2023-2024-1.md",
+    "subjects/ET/test/neuq/test.md",
+    "subjects/ET/test/neuq",
+    "subjects/ET/test",
+    "subjects/ET",
+    "subjects/MM",
+    "subjects/NC/test/neuq",
+    "subjects/NC/test",
     "subjects/NC",
-    "subjects/CE/test/neuq/README.md",
-    "subjects/CE/test/neuq/2023-2024-F.md",
-    "subjects/CE/test/README.md",
     "subjects/CE/test/neuq",
-    "subjects/CE/test",
-    "subjects/CE/README.md",
-    "subjects/CE",
-    "subjects/MachineryManufacturing",
     "assets/image/a.JPG",
     "assets/image/IMG_1060.JPG",
-    "assets/image",
     "android-chrome-512x512.png",
     "subjects/ControlEngineering/test/neuq/Df7a90A16D1699882032058-84e8abf4-44ba-4dad-96d0-cd18d33519a6.png",
     "subjects/ControlEngineering/test/Df7a90A16D1699882032058-84e8abf4-44ba-4dad-96d0-cd18d33519a6.png",

@@ -1,5 +1,5 @@
 ---
-title: 文档库
+title: 文档
 index: false
 icon: laptop-code
 category:
