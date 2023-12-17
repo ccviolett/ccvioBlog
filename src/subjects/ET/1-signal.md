@@ -5,7 +5,6 @@ date: 2023-12-15
 
 # 第一章 信号描述与分析基础
 
-
 ## 信号定义与分类
 
 ::: tip 如何区分确定信号和非确定性信号？
@@ -68,12 +67,12 @@ $$
 ### 相关公式
 
 $$
-\mu_{x} = E[x(t)] = \int_{T \to \infty} \frac{1}{T} \int ^{T}_{0} x(t) \, dt $$
+\mu_{x} = E[x(t)] = \lim_{T \to \infty} \frac{1}{T} \int ^{T}_{0} x(t) \, dt $$
 $$
-\psi^{2}_{x} = E[x^{2}(t)] = \lim_{ T \to \infty } \int ^{T}_{0}x^{2}(t) \, dt
+\psi^{2}_{x} = E[x^{2}(t)] = \lim_{ T \to \infty } \frac{1}{T} \int ^{T}_{0}x^{2}(t) \, dt
 $$
 $$
-\sigma_{x}^{2} = E[(x(t) - E[x(t)])^{2}] = \lim_{ T \to \infty } \frac{1}{T} \int _{0}^{T} (x(t) - \mu_{x})^{2} \, dx
+\sigma_{x}^{2} = E[(x(t) - E[x(t)])^{2}] = \lim_{ T \to \infty } \frac{1}{T} \int _{0}^{T} (x(t) - \mu_{x})^{2} \, dt
 $$
 
 $$
@@ -486,8 +485,15 @@ $$
 
 ### 余弦函数
 
+#### 欧拉公式
+
+$$
+\cos x = \frac{e^x + e^{-x}}{2}
+$$
+
 #### 余弦函数的频谱
 
+由欧拉公式 推得：
 $$
 \begin{align}
 \cos\omega_{0}t  & \leftrightarrow  \pi[\delta(\omega - \omega_{0}) + \delta(\omega + \omega_{0})] \\
@@ -522,3 +528,53 @@ $$
 \sum_{n = -\infty}^{\infty} \delta(t - kT) \leftrightarrow \omega_{0} \sum_{n = -\infty}^{\infty} \delta(\omega - n\omega_{0})
 $$
 
+:::: danger 傅立叶变换性质的正确使用
+在使用傅里叶变换性质解决问题的时候，我们很容易胡乱使用其中的性质，导致错误的结果。
+
+我们以一个例题展开：
+
+::: note 例题
+已知 $f(t) = \cos\left( 4t + \frac{\pi}{3} \right)$，试求其频谱 $F(\omega)$
+:::
+
+有一个错误的做法如下：
+
+::: details 错误的做法
+解：
+
+由 $\cos(\omega_{0}t) \leftrightarrow \pi[\delta(\omega - \omega_{0}) + \delta(\omega + \omega_{0})]$ 得：
+
+$$
+\cos(4t) \leftrightarrow \pi[\delta(\omega - 4) + \delta(\omega + 4)]
+$$
+
+由 $x(t - t_{0}) \leftrightarrow X(\omega)e^{-j\omega t_{0}}$ 得：
+
+$$
+\cos\left( 4t + \frac{\pi}{3} \right) \leftrightarrow \pi[\delta(\omega - 4) + \delta(\omega + 4)]e^{j\omega \pi/3}
+$$
+于是：
+$$
+F\left[ \cos\left( 4t + \frac{\pi}{3} \right) \right] = \pi \cdot e^{j \omega \frac{\pi}{3}} \cdot \delta(\omega - 4) + \pi \cdot e^{j\omega \frac{\pi}{3}} \delta(\omega + 4)
+$$
+
+:::
+
+正确的做法应该是先使用欧拉公式将三角函数展开，随后再进行傅立叶变换。
+
+::: warning 正确解法
+解：由欧拉公式 $\cos x = \frac{e^{jx} + e^{-jx}}{2}$  和单位脉冲函数的傅立叶变换对 $e^{j\omega_{0} t} \leftrightarrow 2\pi\delta(\omega - \omega_{0})$ 可得：
+$$
+\begin{align}
+\cos\left( 4t + \frac{\pi}{3} \right)  & = \frac{1}{2} [e^{j(4t + \pi/3)} + e^{-j(4t + \pi/3)}] \\
+	 & =  \frac{1}{2}(e^{j 4t} \cdot e^{j\pi/3} + e^{-j 4t}\cdot e^{-j\pi/3}) \\
+	 & = \pi\cdot\delta\left( \omega - 4 \right) e^{j\pi/3} + \pi\delta(\omega + 4)e^{-j\pi/3}
+\end{align}
+$$
+:::
+
+问题的所在是单位脉冲函数的尺度变换性找不到合理的解释。
+
+一些可能有用的相关资料：[阶跃函数的傅里叶变换到底是什么？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/52792295)
+
+::::
