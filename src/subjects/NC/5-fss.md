@@ -51,7 +51,7 @@ order: 50
 
 ## 旋转变压器
 
-![截屏2023-11-26 15.42.33.png](/assets/images/match/subjects/NumericalControl/57adB423Cb1700984559249-1831d788-1b27-4281-b1a0-d04e1217be79.png)
+![截屏2023-11-26 15.42.33.png](_images/57adB423Cb1700984559249-1831d788-1b27-4281-b1a0-d04e1217be79.png)
 
 - 工作原理：电磁互感原理
 - 工作方式：
@@ -60,7 +60,7 @@ order: 50
 
 ## 感应同步器
 
-![截屏2023-11-26 15.42.03.png](/assets/images/match/subjects/NumericalControl/cC373DDffE1700984527347-83377d62-184f-430b-88e2-bda6e5606c54.png)
+![截屏2023-11-26 15.42.03.png](_images/cC373DDffE1700984527347-83377d62-184f-430b-88e2-bda6e5606c54.png)
 
 - 工作原理：电磁互感原理，其输出电压随被测直线位移或角位移而改变
 - 工作方式：
@@ -103,7 +103,7 @@ $\alpha = \frac{360}{mzK} (^\circ)$
 
 其中$K$为拍数与相数之比（1 或 2）。
 
-![](/assets/images/match/subjects/NumericalControl/ea3b08bF5A202312111748951.png)
+![](_images/ea3b08bF5A202312111748951.png)
 
 ## 步进电机驱动电路特点
 
@@ -120,11 +120,11 @@ $\alpha = \frac{360}{mzK} (^\circ)$
    - 脉冲调相器：将数控装置的进给脉冲信号转换为相位变化信号。 
    - 鉴相器：鉴别指令信号与反馈信号的相位，判别两者之间的相位差及其相位超前、滞后关系，并变成相应的误差电压信号作为速度单元的输入信号
    - 鉴相基准发生器的作用是提供基准脉冲，方便相位比较
-   - ![image.png](/assets/images/match/subjects/NumericalControl/aac02eEb281701059023329-92e65759-21f3-4041-9a6e-d4798866c92b.png)
+   - ![image.png](_images/aac02eEb281701059023329-92e65759-21f3-4041-9a6e-d4798866c92b.png)
 - 鉴幅式：
    - 以位置检测信号的幅值大小来反映机械位移的数值，并作为位置反馈信号与指令信号进行比较，构成半闭环控制系统。 
    - 位置检测元件工作在幅值工作方式，感应同步器、旋转变压器和磁栅。 
    - 鉴幅器：对位置检测装置输出的代表工作台实际位移的电压信号进行滤波、放大、检波、整流，变成正、负与工作台移动方向相对应、幅值与工作台位移成正比的直流电压信号。
-   - ![image.png](/assets/images/match/subjects/NumericalControl/5f37DB5da31701059039278-8f3fd826-30bb-4319-8a95-de164d1f0efd.png)
+   - ![image.png](_images/5f37DB5da31701059039278-8f3fd826-30bb-4319-8a95-de164d1f0efd.png)
 
 导距关系、判断（通电）顺序、绕组

@@ -18,7 +18,7 @@ $$f(t) = L^{-1} [F(s)] = \frac{1}{2\pi j} \int _{\sigma - j \infty} ^{\sigma + j
 
 ## 简单函数的拉氏变换
 
-![](/assets/images/match/subjects/ControlEngineering/FdE2827bcc202312102325862.png)
+![](_images/FdE2827bcc202312102325862.png)
 
 ## 拉氏变换性质
 
@@ -27,7 +27,7 @@ $$f(t) = L^{-1} [F(s)] = \frac{1}{2\pi j} \int _{\sigma - j \infty} ^{\sigma + j
 | 叠加原理 | $L[af_1(t) + bf_2(t)] = aL[f_1(t)] + bL[f_2(t)]$ |
 | 微分定理 | $L\left[ \frac{df(t)}{dt} \right] = sF(s) - f(0), f(0) = f(t)_{t = 0}$ |
 | 积分定理 | 当初始条件为零时，$L\left[ \int f(t) \, dx  \right] = \frac{1}{s}F(s)$ |
-| 延时定理 | 设当 $t < 0$ 时，$f(t) = 0$，则对任意 $\tau \geq 0$，有：<br />$L[f(t - \tau)] = e^{-\tau s} F(s)$ |
+| 延时定理 | 设当 $t < 0$ 时，$f(t) = 0$，则对任意 $\tau \geq 0$，有：$L[f(t - \tau)] = e^{-\tau s} F(s)$ |
 | 衰减定理 | $L[e^{-at}f(t)] = F(s + a)$ |
 | 初值定理 | $lim_{t \to 0^+}f(t) = f(0^+) = lim_{s \to \infty} sF(s)$ |
 | 终值定理 | $lim_{t \to \infty} f(t) = f(\infty) = lim_{s \to 0} sF(s)$ |
@@ -175,7 +175,9 @@ A_{3} & = \frac{4}{5}
 \end{cases}
 $$
 :::
-故$F(s) = -\frac{1}{3} \cdot \frac{1}{s} + \frac{8}{15} \cdot \frac{1}{s - 3} + \frac{4}{5} \cdot \frac{1}{s + 2}$<br />$f(t) = L^{-1}[F(s)] = -\frac{1}{3} + \frac{8}{15}e^{3t} + \frac{4}{5}e^{-2t}$
+故$F(s) = -\frac{1}{3} \cdot \frac{1}{s} + \frac{8}{15} \cdot \frac{1}{s - 3} + \frac{4}{5} \cdot \frac{1}{s + 2}$
+
+$f(t) = L^{-1}[F(s)] = -\frac{1}{3} + \frac{8}{15}e^{3t} + \frac{4}{5}e^{-2t}$
 ::::
 
 :::: details 例题3（含共轭复数极点）
@@ -251,7 +253,9 @@ $$
 
 :::: details 例题4（含多重极点）
 
-求$F(s) = \frac{s + 3}{(s + 2)^{2}(s + 1)}$的原函数。<br />解：$F(s) = \frac{A_{1}}{(s + 2)^{2}} + \frac{A_{2}}{s + 2} + \frac{A_{3}}{s + 1}$
+求$F(s) = \frac{s + 3}{(s + 2)^{2}(s + 1)}$的原函数。
+
+解：$F(s) = \frac{A_{1}}{(s + 2)^{2}} + \frac{A_{2}}{s + 2} + \frac{A_{3}}{s + 1}$
 
 ::: tabs
 
@@ -378,10 +382,22 @@ $$
 
 :::: details 例题6（微分定理求解微分方程）
 
-某系统微分方程为$3 \frac{dy_{o}(t)}{dt} + 2y_{o}(t) = 2 \frac{dx_{i}(t)}{dt} + 3 x_{i}(t)$，已知$y_o(0) = x_o(0) = 0$，当输入为$1(t)$时，输出的终值和初值各为多少？<br />解：当输入为$1(t)$时，$X_i(s) = L[x_i(t)] = L[1(t)] = \frac{1}{s}$<br />对微分方程两边进行拉氏变换：<br />$3sY_{o}(s) + 2Y_{o}(s) = 2sX_{i}(s) + 3X_{i}(s)$<br />整理得$Y_{o}(s) = \frac{2s + 3}{3s + 2}X_{i}(s) = \frac{2s + 3}{3s + 2} \cdot \frac{1}{s}\\$<br />由初值定理和终值定理可得：<br />$\begin{align}
+某系统微分方程为$3 \frac{dy_{o}(t)}{dt} + 2y_{o}(t) = 2 \frac{dx_{i}(t)}{dt} + 3 x_{i}(t)$，已知$y_o(0) = x_o(0) = 0$，当输入为$1(t)$时，输出的终值和初值各为多少？
+
+解：当输入为$1(t)$时，$X_i(s) = L[x_i(t)] = L[1(t)] = \frac{1}{s}$
+
+对微分方程两边进行拉氏变换：
+
+$3sY_{o}(s) + 2Y_{o}(s) = 2sX_{i}(s) + 3X_{i}(s)$
+
+整理得 $Y_{o}(s) = \frac{2s + 3}{3s + 2}X_{i}(s) = \frac{2s + 3}{3s + 2} \cdot \frac{1}{s}$
+
+由初值定理和终值定理可得：
+
+$$\begin{align}
 y_{o}(\infty) = \lim_{ t \to \infty } y_{o}(t) = \lim_{ s \to o } sY_{o}(s) = \lim_{ s \to 0 } s \cdot \frac{2s + 3}{3s + 2} \cdot \frac{1}{s} = \frac{3}{2} \\
 y_{o}(0) = \lim_{ t \to 0 } y_{o}(t) = \lim_{ s \to \infty } sY_{o}(s) = \lim_{ s \to \infty } s \cdot \frac{2s + 3}{3s + 2} \cdot \frac{1}{s} = \frac{2}{3} \\
-\end{align}$
+\end{align}$$
 
 ::::
 

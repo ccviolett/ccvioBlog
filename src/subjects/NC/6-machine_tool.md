@@ -12,7 +12,7 @@ order: 60
 
 如图中，纵向隔板主要提高抗弯刚度，横向隔板主要提高抗扭刚度，斜向隔板兼具提高抗弯、抗扭刚度
 
-![截屏2023-11-26 15.54.56.png](/assets/images/match/subjects/NumericalControl/D1B7e99B6C1700985300795-893ecc67-80bc-45d7-9afa-84b73cac7a2e.png)
+![截屏2023-11-26 15.54.56.png](_images/D1B7e99B6C1700985300795-893ecc67-80bc-45d7-9afa-84b73cac7a2e.png)
 
 - 提高动刚度的措施
    - 改善机床的阻尼特性（如填充阻尼材料）
@@ -20,20 +20,20 @@ order: 60
    - 充分利用结合面的摩擦阻尼
    - 采用新材料，提高抗震性
 
-![截屏2023-11-26 15.56.58.png](/assets/images/match/subjects/NumericalControl/F3554Ae1c61700985422800-372faac9-228b-45bf-86d2-f39576108238.png)
+![截屏2023-11-26 15.56.58.png](_images/F3554Ae1c61700985422800-372faac9-228b-45bf-86d2-f39576108238.png)
 
 ## 常用的预紧方法
 
-![](/assets/images/match/subjects/NumericalControl/dF4DdbacEf202312111748952.png)
+![](_images/dF4DdbacEf202312111748952.png)
 
 ## 齿差调整法计算
 
-![截屏2023-11-27 14.13.59.png](/assets/images/match/subjects/NumericalControl/CEFea004Fb1701065644344-06a4bba8-a545-45a3-ab9d-f8ad40940921.png)
+![截屏2023-11-27 14.13.59.png](_images/CEFea004Fb1701065644344-06a4bba8-a545-45a3-ab9d-f8ad40940921.png)
 
-![截屏2023-11-27 14.30.32.png](/assets/images/match/subjects/NumericalControl/0265ad71A51701066639363-3f0db43f-d437-42e1-8e09-fe3e31ffcdd1.png)
+![截屏2023-11-27 14.30.32.png](_images/0265ad71A51701066639363-3f0db43f-d437-42e1-8e09-fe3e31ffcdd1.png)
 
 ## 齿轮传动间隙调整方法
 
-![](/assets/images/match/subjects/NumericalControl/d48134BcDd202312111748953.png)
+![](_images/d48134BcDd202312111748953.png)
 
 刚性调整法是一种调整后齿侧间隙不能自动补偿的调整方式。因此，齿轮的周节公差及齿厚要严格控制，否则传动的灵活性会受到影响。这种调整方式结构比较简单，且有较好的传动刚度。

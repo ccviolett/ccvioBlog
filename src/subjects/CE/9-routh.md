@@ -98,7 +98,7 @@ $$
 ::: details 例题3（含参数的劳斯判据）
 设某反馈控制系统如下图所示，试计算使系统稳定的$K$值范围
 
-![截屏2023-11-14 22.07.13.png](/assets/images/match/subjects/ControlEngineering/74089A21BD1699970838418-26f5eb98-782b-4096-9c70-01a3add3d3ba.png)
+![截屏2023-11-14 22.07.13.png](_images/74089A21BD1699970838418-26f5eb98-782b-4096-9c70-01a3add3d3ba.png)
 
 解：系统闭环传递函数为$\frac{X_{o}(s)}{X_{i}(s)} = \frac{K}{s(s + 1)(s + 2) + K}$，其特征方程为：
 

@@ -18,7 +18,7 @@ $$
 \varepsilon(s) = X_{i}(s) - Y(s) = X_{i}(s) - H(s)X_{o}(s)
 $$
 
-![](/assets/images/match/subjects/ControlEngineering/fD0A432650202312111127645.png)
+![](_images/fD0A432650202312111127645.png)
 
 稳态偏差$\varepsilon_{ss} = \lim_{ t \to \infty } \varepsilon(t) = \lim_{ s \to 0 } s\varepsilon(s)$，间接表示控制系统的稳态控制准确程度
 
@@ -43,7 +43,7 @@ $$e_{ss} = \lim_{ t \to \infty } e(t) = \lim_{ s \to 0 } sE(s) = \lim_{ s \to 0 
 
 已知控制系统如图，求当$x_i(t) = 1(t)$时的稳态误差。
 
-![](/assets/images/match/subjects/ControlEngineering/a9C0f0AC3E202312111127820.png)
+![](_images/a9C0f0AC3E202312111127820.png)
 
 解：当$x_i(t) = 1(t)$时，$X_I(s) = \frac{1}{s}$
 
@@ -76,7 +76,7 @@ $$
 
 ### 系统对不同输入的稳态误差
 
-![](/assets/images/match/subjects/ControlEngineering/89f2bCE5fa202312111129140.png)
+![](_images/89f2bCE5fa202312111129140.png)
 
 ::: tip
 例：在单位斜坡输入信号作用下，0 型系统的稳态误差 $e_{ss} = \infty$
@@ -90,7 +90,7 @@ $$
 
 求系统在单位阶跃、斜坡、加速度输入的稳态误差。
 
-![](/assets/images/match/subjects/ControlEngineering/2f9bEaEEa4202312111130170.png)
+![](_images/2f9bEaEEa4202312111130170.png)
 
 解：
 
@@ -118,7 +118,7 @@ $$
 
 ## 干扰引起的稳态误差
 
-![](/assets/images/match/subjects/ControlEngineering/7f3Bc9d06E202312111131348.png)
+![](_images/7f3Bc9d06E202312111131348.png)
 
 令$x_i(t) = 0$，则系统只存在扰动，我们可以知道$\frac{\varepsilon_{N}(s)}{N(s)} = \frac{-G_{2}(s)H(s)}{1 + G_{1}(s)G_{2}(s)H(s)}$，即$\varepsilon_{N}(s) = \frac{-G_{2}(s)H(s)}{1 + G_{1}(s)G_{2}(s)H(s)}N(s)$
 
@@ -138,7 +138,7 @@ $$
 
 某系统如下图所示，当$x_{i}(t) = t\cdot 1(t)$、$n(t) = 0.5 \cdot 1(t)$作用时，$e_{ss}$值为多少？
 
-![](/assets/images/match/subjects/ControlEngineering/39BBeb9CC3202312111131064.png)
+![](_images/39BBeb9CC3202312111131064.png)
 
 解：根据劳斯判据该系统稳定。
 
