@@ -5,6 +5,14 @@ category:
   - 使用指南
 ---
 
+### 坑
+
+#### Build
+
+```bash
+export NODE_OPTIONS=--max_old_space_size=4096
+```
+
 ### VuePress Theme Hope
 
 #### 安装配置

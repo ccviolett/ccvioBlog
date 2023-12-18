@@ -1,6 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
+import encrypt from "./encrypt.js";
 
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
@@ -23,6 +24,10 @@ export default hopeTheme({
 
   // sidebar
   sidebar,
+
+  // encrypt
+  encrypt,
+
 
   footer: "默认页脚",
 
@@ -63,12 +68,6 @@ export default hopeTheme({
       Weibo: "https://example.com",
       Whatsapp: "https://example.com",
       Youtube: "https://example.com",
-    },
-  },
-
-  encrypt: {
-    config: {
-      "/subjects/": ["neuqlxy"],
     },
   },
 
