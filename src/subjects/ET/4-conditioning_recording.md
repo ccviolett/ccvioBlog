@@ -151,6 +151,58 @@ $$
 答：不可以。因为调幅波是载波幅值随调制信号大小程正比变化，只有相乘再能实现。
 :::
 
+### 调制信号的计算
+
+::: note 常用三角公式
+<!-- @include: ../FM/trigonometric_function.md#sp -->
+:::
+
+:::: details 例题
+已知调幅波 $x_{a}(t) = (100 + 30\cos\Omega t + 20 \cos 3\Omega t)(\cos \omega_{c}t)$，其中 $f_{c} = 10kHz$，$f_{\Omega} = 500Hz$，求：
+1. $x_{a}(t)$ 所包含的各分量的频率及幅值
+2. 绘制调制信号与调幅波的频谱。
+
+解：
+
+利用三角公式展开：
+
+$$
+\begin{align}
+x_{a}(t) = &  100\cos\omega_{c}t + 30\cos\Omega t\cos\omega_{c}t + 20\cos 3\Omega t\cos\omega_{c}t \\
+	 = &  100 \cos\omega_{c}t + \frac{30}{2}[\cos(\Omega t + \omega_{c}t) + \cos(\Omega t - \omega_{c}t)]  \\
+     & + \frac{20}{2} [\cos(3\Omega t + \omega_{c}t) + \cos(3\Omega t - \omega_{c}t)] \\
+	 = &  100\cos\omega_{c}t + 15\cos(\Omega + \omega_{c})t + 15\cos(\Omega-\omega_{c})t  \\
+ & + 10\cos(3\Omega + \omega_{c})t + 10\cos(3\Omega - \omega_{c})t
+\end{align}
+$$
+
+已知频率 $f = \frac{\omega}{2\pi}$ ，代入 $f_{c} = 10kHz$、$f_{\Omega} = 500 Hz$，得：
+
+$$
+\begin{align}
+x_{a}(t) = &  100\cos(2\pi \cdot 10k)t  \\
+ & + 15 \cos 2\pi(10k + 500)t  \\
+ & + 15\cos 2\pi(500 - 10k)t  \\
+ & + 10 \cos 2\pi(3 \cdot 500 + 10k)t  \\
+ & + 10 \cos 2\pi(3 \cdot 500 - 10k)t \\
+\end{align}
+$$
+
+故共 5 各分量，其幅值和频率分别为：
+
+$$
+\begin{cases}
+A_{1} = 100 & f_{1} = 10000 \\
+A_{2} = 15  & f_{2} = 10500 \\
+A_{3} = 15  & f_{3} = 9500 \\
+A_{4} = 10  & f_{4} = 11500 \\
+A_{5} = 10  & f_{5} = 8500
+\end{cases}
+$$
+
+横坐标从小到大排泄，依次画出即可得到频谱图。
+::::
+
 ### 同步解调的分析
 
 把调幅波再次与原载波信号相乘，随后用低通滤波器滤去大于 $f_{m}$ 的成分，则可以复现原信号的频谱，幅值为原来的一半。即：

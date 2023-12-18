@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "b479172c0fe5293a",
+        "id": "5dea5b990593085a",
         "type": "tabs",
         "children": [
           {
-            "id": "68259cd7ced28ecc",
+            "id": "459eb6894d09f74f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "subjects/ET/5-analysis_processing.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -73,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.50390243530273,
-    "collapsed": true
+    "width": 231.50390243530273
   },
   "right": {
     "id": "1888c7be6e522785",
@@ -109,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "subjects/ET/5-analysis_processing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "subjects/ET/5-analysis_processing.md"
+              }
             }
           },
           {
@@ -136,6 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "subjects/ET/5-analysis_processing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,24 +196,30 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "68259cd7ced28ecc",
+  "active": "459eb6894d09f74f",
   "lastOpenFiles": [
-    "subjects/ET/5-analysis_processing.md",
-    "subjects/ET/1-signal.md",
-    "subjects/ET/2-test_system.md",
-    "subjects/ET/_images/截屏2023-12-17 21.48.38.png",
+    "subjects/FM/trigonometric_function.md",
     "subjects/ET/4-conditioning_recording.md",
+    "subjects/ET/5-analysis_processing.md",
+    "subjects/FM/README.md",
+    "subjects/FM",
+    "subjects/ET/3-sensor.md",
+    "subjects/ET/2-test_system.md",
+    "subjects/CE/4-time_domain.md",
+    "subjects/CE/6-frequency_characteristic.md",
+    "subjects/ET/0-introduction.md",
+    "subjects/ET/1-signal.md",
+    "subjects/ET/_images/5631702879703_.pic.jpg",
+    "subjects/ET/_images/截屏2023-12-17 21.48.38.png",
     "subjects/ET/_images/截屏2023-12-17 21.38.50.png",
     "subjects/ET/_images/截屏2023-12-17 21.20.31.png",
     "subjects/ET/_images/截屏2023-12-17 21.10.47.png",
     "subjects/ET/_images/截屏2023-12-17 21.05.33.png",
-    "subjects/ET/3-sensor.md",
     "subjects/CE/test/neuq/_images",
     "subjects/NC/_images/fb883a5AaA1700991984655-2a53c3db-cb6c-497f-86a6-b7def493d2d2.png",
     "subjects/NC/_images/f8cBaaE7781700992099655-354b44f4-e263-471f-88f4-edf5aacb0103.png",
     "subjects/NC/_images/f7Fa6B0FF71701050574451-b0711802-3b75-4d00-9a05-96768d59acd8.png",
     "subjects/NC/_images/ec4BA8F9a11701056770777-231a1379-ee74-468f-9d06-b200f56461a8.png",
-    "subjects/NC/_images/eaBEfDcBC81700992625484-3a86b559-a8ab-476b-9be4-14923ad385d3.png",
     "subjects/NC/_images",
     "subjects/NC/NumericalControl",
     "subjects/MM/_images",
@@ -214,7 +228,6 @@
     "subjects/CE/0-basic_info.md",
     "subjects/CE/_images",
     "subjects/CE/ControlEngineering",
-    "subjects/ET/0-introduction.md",
     "未命名.md",
     "wiki/vuepress.md",
     "posts/markdown_best_practice.md",
@@ -223,7 +236,6 @@
     "_images",
     "subjects/ET/_images",
     "subjects/ET/_image",
-    "subjects/ET/image",
     "租房.md",
     "subjects/ET/test/neuq/README.md",
     "subjects/ET/test/README.md",
@@ -232,9 +244,6 @@
     "subjects/NC/1-introduction.md",
     "intro.md",
     "posts/README.md",
-    "wiki/page.md",
-    "wiki/encrypt.md",
-    "wiki/disable.md",
     "机械工程测试技术思维导图.canvas",
     "学习路线.canvas",
     "未命名.canvas",
