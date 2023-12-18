@@ -67,10 +67,13 @@ $$
 ### 相关公式
 
 $$
-\mu_{x} = E[x(t)] = \lim_{T \to \infty} \frac{1}{T} \int ^{T}_{0} x(t) \, dt $$
+\mu_{x} = E[x(t)] = \lim_{T \to \infty} \frac{1}{T} \int ^{T}_{0} x(t) \, dt
+$$
+
 $$
 \psi^{2}_{x} = E[x^{2}(t)] = \lim_{ T \to \infty } \frac{1}{T} \int ^{T}_{0}x^{2}(t) \, dt
 $$
+
 $$
 \sigma_{x}^{2} = E[(x(t) - E[x(t)])^{2}] = \lim_{ T \to \infty } \frac{1}{T} \int _{0}^{T} (x(t) - \mu_{x})^{2} \, dt
 $$
