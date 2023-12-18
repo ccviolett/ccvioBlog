@@ -243,28 +243,39 @@ $$
 
 ### RC 无源滤波电路
 
-#### 一阶 RC 低通滤波器
+相关资料：[一阶低通滤波器与高通滤波器的使用_一阶低通滤波器传递函数-CSDN博客](https://blog.csdn.net/weixin_43455581/article/details/110918558)
 
-![](_images/2023-12-16-ET-00002.png)
+| 电路           | 一阶 RC 低通滤波器                   | 一阶 RC 高通滤波器                   |
+| :--------------: | :------------------------------------: | :------------------------------------: |
+| 图像           | ![](_images/2023-12-16-ET-00002.png) | ![](_images/2023-12-16-ET-00004.png) |
+| 传递函数       | $H(s) = \frac{1}{1 + \tau s} = \frac{1}{1 + RCs}$                                             | $H(s) = \frac{\tau s}{1 + \tau s} = \frac{RCs}{1 + RCs}$                                      |
+| 频率响应函数   |             $H(j\omega) = \frac{1}{1 + RCj\omega}$<br/>$H(jf) = \frac{1}{1 + RC \cdot 2\pi f}$                         |  $H(j\omega) = \frac{RC j\omega}{1 + RCj\omega}$<br/>$H(jf) = \frac{RC \cdot 2\pi f}{1 + RC \cdot 2\pi f}$                                    |
+| 幅频特性       |   $A(f) = \lvert H(f) \rvert = \frac{1}{\sqrt{ 1 + (2\pi f \tau )^{2} }}$                                   |    $A(f) = \lvert H(f) \rvert = \frac{2\pi f\tau}{\sqrt{ 1 + (2\pi f\tau)^{2} }}$                                  |
+| 相频特性       | $\varphi(f) = -\arctan(2\pi f\tau)$                                     |         $\varphi(f) = \arctan\left( \frac{1}{2\pi f\tau} \right)$                             |
+| 幅频、相频图像 |    ![](_images/2023-12-16-ET-00003.png)                                  |   ![](_images/2023-12-16-ET-00005.png)                                   |
+
+::: details 例题
+已知某 RC 低通滤波器，$R = 1k\Omega, C = 1\mu F$
+1. 确定各函数式 $H(s), H(\omega), A(\omega), \varphi(\omega)$
+2. 当输入信号 $u_{i} = 10\sin 1000t$ 时，求输出信号 $u_{0}$，并比较其幅值及相位关系
+
+解：
+(1) 有 $\tau = RC = 1000 \times 10^{-6} = 0.001s$
+
+故 $H(s) = \frac{1}{\tau s + 1} =  \frac{1}{0.001s + 1}$，$H(\omega) = \frac{1}{1 + j\tau\omega} = \frac{1}{1 + j0.001\omega}$
+
+$A(\omega) = \sqrt{ \frac{1}{1 + (0.001 \omega)^{2}} }$，$\varphi(\omega) = -\arctan 0.001 \omega$
+
+(2) 当 $u_{i} = 10\sin 1000 t$ 时，$\omega = 1000 rad /s$，故
 
 $$
-\begin{align}
-A(f) = |H(f)| = \frac{1}{\sqrt{ 1 + (\tau 2\pi f)^{2} }} \\
-\varphi(f) = -\arctan(2\pi f\tau)
-\end{align}
+\begin{cases}
+A(1000)  = \sqrt{ \frac{1}{1 + (0.001 \times 1000)^{2}} } = \frac{\sqrt{ 2 }}{2} \\
+\varphi(1000) = -\arctan 0.001 \times 1000 = -\frac{\pi}{4}
+\end{cases}
 $$
 
-![](_images/2023-12-16-ET-00003.png)
+故 $u_{o} = 10 \times A(1000) \sin[1000t + \varphi(1000)] = 5\sqrt{ 2 } \sin\left( 1000t - \frac{\pi}{4} \right)$
 
-#### 一阶 RC 高通滤波器
-
-![](_images/2023-12-16-ET-00004.png)
-
-$$
-\begin{align}
-A(f) = |H(f)| = \frac{2\pi f\tau}{\sqrt{ 1 + (\tau 2\pi f)^{2} }} \\
-\varphi(f) = \arctan\left( \frac{1}{2\pi f\tau} \right)
-\end{align}
-$$
-
-![](_images/2023-12-16-ET-00005.png)
+相对于输入 $u_{i}$，输出幅值衰减为 $5\sqrt{ 2 }$（衰减了 -3 dB），相位滞后 $\frac{\pi}{4}$
+:::

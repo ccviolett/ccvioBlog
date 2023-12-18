@@ -26,6 +26,7 @@ export default sidebar({
   ],
   "/posts/": "structure",
   "/subjects/": [
+    clink("数学基础", "book", "FM"),
     clink("控制工程基础", "book", "CE"),
     clink("数控技术", "book", "NC"),
     clink("机械制造技术", "book", "MM"),
