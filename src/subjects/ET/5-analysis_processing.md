@@ -42,7 +42,7 @@ R_{x}(\tau) = &  \lim_{ T \to \infty } \frac{1}{T}\int _{0}^{T}x(t)x(t + \tau) \
 \end{align}
 $$
 
-有 $T_{0} = \frac{2\pi}{\omega}$ 为正弦函数的周期。令 $\omega t + \varphi = \theta$，kk则 $dt = \frac{d\theta}{\omega}$，故
+有 $T_{0} = \frac{2\pi}{\omega}$ 为正弦函数的周期。令 $\omega t + \varphi = \theta$，则 $dt = \frac{d\theta}{\omega}$，故
 
 $$
 \begin{align}
@@ -66,10 +66,17 @@ $$
 R_{xy}(\tau) = \lim_{ T \to \infty }  \frac{1}{T} \int ^{T}_{0} x(t)y(t + \tau) \, dt 
 $$
 
+$$
+\rho _{xy}(\tau) = \frac{R_{xy}(\tau) - \mu_{x}\mu_{y}}{\sigma_{x}\sigma_{y}}
+$$
+
 #### 互相关函数的性质
 
 - 非偶函数
 - $\tau = \tau_{0}$ 时呈现最大值，反映 $x(t)$ 和 $y(t)$ 之间的滞后时间
+- $R_{xy}(\tau) = R_{yx}(-\tau)$
+- $R_{xy}(\tau) = R_{xy}^{*}(-\tau)$，其中星号表示共轭复数
+- 同频相关、不同频不相关（相关系数 $\rho _{xy}$ 等于 $0$ ）
 
 ::: details 例题
 设有两个周期信号 $x(t) = x_{0}\sin(\omega t + \theta)$、$y(t) = y_{0}\sin(\omega t + \theta - \varphi)$。
@@ -108,7 +115,7 @@ $$
 
 #### 互相关函数的应用
 
-- 相关滤波
+- 相关滤波（使用频率保持性）
 - 相关测速
 - 位置检测：石油管道破损位置定位
 - 诊断：振动定位
@@ -132,7 +139,7 @@ $S_{x}(f)$ 就是 $x(t)$ 的自功率谱密度函数
 
 $$
 \begin{cases}
-S_{xy}(f) = \int_{-\infty}^{\infty} R_{x}(\tau)e^{-j 2\pi f \tau} \, d\tau  \\
+S_{xy}(f) = \int_{-\infty}^{\infty} R_{xy}(\tau)e^{-j 2\pi f \tau} \, d\tau  \\
 R_{xy}(\tau) = \int _{-\infty}^{\infty} S_{xy}(f) e^{j 2\pi f\tau} \, df 
 \end{cases}
 $$
