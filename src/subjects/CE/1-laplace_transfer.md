@@ -160,20 +160,20 @@ $$
 $F(s) = \frac{(A_1  +A_2 + A_3)s^2 + (-A_1+2A_2-3A_3)s - 6A_1}{s(s - 3)(s + 2)}$
 
 由对应系数相同可得：
-$$\begin{cases}
+$$
+\begin{cases}
 A_{1} + A_{2} + A_{3} &= 1 \\
 -A_{1} + 2A_{2} - 3A_{3} &= -1 \\
 -6 A_{1} &= 2
 \end{cases}
-
 \Rightarrow
-
 \begin{cases}
 A_{1} &= -\frac{1}{3} \\
 A_{2} &= \frac{8}{5} \\
 A_{3} & = \frac{4}{5}
 \end{cases}
 $$
+
 :::
 故$F(s) = -\frac{1}{3} \cdot \frac{1}{s} + \frac{8}{15} \cdot \frac{1}{s - 3} + \frac{4}{5} \cdot \frac{1}{s + 2}$
 

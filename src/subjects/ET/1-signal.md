@@ -67,10 +67,13 @@ $$
 ### 相关公式
 
 $$
-\mu_{x} = E[x(t)] = \lim_{T \to \infty} \frac{1}{T} \int ^{T}_{0} x(t) \, dt $$
+\mu_{x} = E[x(t)] = \lim_{T \to \infty} \frac{1}{T} \int ^{T}_{0} x(t) \, dt
+$$
+
 $$
 \psi^{2}_{x} = E[x^{2}(t)] = \lim_{ T \to \infty } \frac{1}{T} \int ^{T}_{0}x^{2}(t) \, dt
 $$
+
 $$
 \sigma_{x}^{2} = E[(x(t) - E[x(t)])^{2}] = \lim_{ T \to \infty } \frac{1}{T} \int _{0}^{T} (x(t) - \mu_{x})^{2} \, dt
 $$
@@ -120,8 +123,8 @@ $$
 其中：
 - $\frac{a_{0}}{2}$ 为直流分量
 - $\sum_{n = 1}^{\infty}$ 表示 $n$ 次谐波
-- $a_{n}\cos n\omega_{0}t$  表示余弦分量幅值
-- $b_{n} \sin n\omega_{0}t$ 表示正弦分量幅值
+- $a_{n}$  表示余弦分量幅值
+- $b_{n}$ 表示正弦分量幅值
 - $\omega_{0}$ 为圆频率，$\omega_{0} = 2\pi f_{0}$，其中 $f_{0}$ 为频率（Hz）
 
 #### 表示方法二
@@ -259,7 +262,7 @@ $$
 
 ### 典型周期信号的傅立叶级数
 
-![](_images/5631702879703_.pic.jpg =200x)
+<img src="_images/5631702879703_.pic.jpg" width="200px">
 
 | 名称     | 傅立叶级数展开式                                                                                                                                  |
 | :--------: | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -393,12 +396,14 @@ $$
 $$
 \lvert G_{T}(\omega)\rvert = T \left \lvert \sin c\left( \frac{\omega T}{2} \right) \right \rvert
 $$
-$$
-\varphi(\omega) = \begin{cases}
-0, \, \sin c\left( \frac{\omega T}{2} \right) > 0 \\
-\pi, \, \sin c\left( \frac{\omega T}{2} \right) < 0  \\
 
-\end{cases}
+$$
+\varphi(\omega) = \left\{
+\begin{array}{ll}
+0, & \text{sinc}\left( \frac{\omega T}{2} \right) > 0 \\
+\pi, & \text{sinc}\left( \frac{\omega T}{2} \right) < 0
+\end{array}
+\right.
 $$
 
 ![](_images/截屏2023-12-16%2021.42.58.png)
@@ -433,7 +438,7 @@ $$
 | 性质   | 说明                                                                                                                                                                  |
 | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 线性   | 若有 $x_{1}(t) \leftrightarrow X_{1}(\omega)$、$x_{2}(t) \leftrightarrow X_{2}(\omega)$，则有 $ax_{1}(t) + bx_{2}(t) \leftrightarrow aX_{1}(\omega) + bX_{2}(\omega)$ |
-| 奇偶性 | 若 $x(t)$ 为时间 $t$ 的实函数，$x(t)$ 和 $X(\omega)$ 的奇偶性相同                                                                                                     |
+| 奇偶虚实性 | $x(t)$ 和 $X(\omega)$的奇偶性相同。 若 $x(t)$ 为时间 $t$ 的偶函数，$x(t)$ 和 $X(\omega)$ 的虚实性相同；若 $x(t)$ 为时间 $t$ 的奇函数，$x(t)$ 和 $X(\omega)$ 的虚实性相反                                                                                                    |
 | 卷积             | 如果有 $x(t) \leftrightarrow X(\omega)$、$h(t) \leftrightarrow H(\omega)$，则存在时域卷积 $x(t) * h(t) \leftrightarrow X(\omega) \cdot H(\omega)$、频域卷积：$x(t) \cdot h(t) \leftrightarrow \frac{1}{2\pi} X(\omega) * H(\omega)$ |
 
 ::: tip 尺度变换性的说明
@@ -451,7 +456,7 @@ $$
 
 解：函数表达式为 $x(t) = Arect[t - t_{0}]$，可视为一个中心位于坐标原点的矩形脉冲时移到 $t_{0}$ 点位置。
 
-故根据时移性 $x(t - t_{0}) \leftrightarrow X(\omega)e^{-j\omega t_{0}}$ 可得：
+故根据时移性 $x(t - t_{0}) \leftrightarrow X(f)e^{-j2\pi ft_{0}}$ 可得：
 
 $$
 X(f) = AT\sin c(\pi fT)e^{j 2\pi ft_{0}}
@@ -484,8 +489,8 @@ $$
 |       单位特性       | $\int _{-\infty}^{\infty}\delta(t) \, dt = 1$ |
 |       乘积特性       | $f(t)\delta(t) = f(0)\delta(t)$，$f(t)\delta(t - t_{0}) = f(t_{0})\delta(t - t_{0})$                                                                              |
 | 积分特性（抽样特性） | $\int _{-\infty}^{\infty} f(t)\delta (t) \, dt = f(0)$，$\int _{-\infty}^{\infty} f(t) \delta(t - t_{0}) \, dt = f(t_{0})$，即 $x(t) * \delta(t - t_{0}) = x(t - t_{0})$ |
-|       拉氏变换       | $\Delta(s) = \int _{0-}^{\infty} \delta(t)e^{-st} \, dt = 1$                                                                                                      |
-|       傅氏变换       | $\Delta(f) = \int _{-\infty}^{\infty}\delta(t) e^{-j 2\pi ft} \, dt = 1$                                                                                          |
+|       拉氏变换       | $\mathscr{L}(s) = \int _{0-}^{\infty} \delta(t)e^{-st} \, dt = 1$                                                                                                      |
+|       傅氏变换       | $\mathscr{F}(\omega ) = \int _{-\infty}^{\infty}\delta(t) e^{-j \omega t} \, dt = 1$                                                                                          |
 
 一个函数与单位脉冲函数卷积的结果，就是将其图像由坐标原点平移至该脉冲函数处。
 #### 常用傅立叶变换对
@@ -495,27 +500,29 @@ $$
 |             $\delta(t) \leftrightarrow 1$              |               $1 \leftrightarrow 2\pi\delta(\omega)$                |
 | $\delta(t - t_{0}) \leftrightarrow e^{-j\omega t_{0}}$ | $e^{j\omega_{0} t} \leftrightarrow 2\pi\delta(\omega - \omega_{0})$ |
 
-### 余弦函数
+### 正弦、余弦函数
 
 #### 欧拉公式
 
 $$
-\cos x = \frac{e^x + e^{-x}}{2}
+e^{j\theta} = \cos(\theta) + j\sin(\theta)
 $$
 
-#### 余弦函数的频谱
+#### 正弦、余弦函数的频谱
 
-由欧拉公式 推得：
+由 欧拉公式 推得：
 $$
 \begin{align}
-\cos\omega_{0}t  & \leftrightarrow  \pi[\delta(\omega - \omega_{0}) + \delta(\omega + \omega_{0})] \\
-\sin\omega_{0}t  & \leftrightarrow  j\pi[\delta(\omega + \omega_{0}) - \delta(\omega - \omega_{0})]
+\cos x & = \frac{e^x + e^{-x}}{2} \\
+\sin x & = \frac{e^x - e^{-x}}{2j} \\
+\cos\omega_{0}t & \leftrightarrow \pi[\delta(\omega - \omega_{0}) + \delta(\omega + \omega_{0})] \\
+\sin\omega_{0}t & \leftrightarrow j\pi[\delta(\omega + \omega_{0}) - \delta(\omega - \omega_{0})]
 \end{align}
 $$
 
 ![](_images/2023-12-16-ET-00006.png)
 
-余弦函数只有实频谱图，正弦函数只有虚频谱图
+余弦函数只有实频谱图，正弦函数只有虚频谱图。
 
 ### 周期函数
 
@@ -560,14 +567,17 @@ $$
 \cos(4t) \leftrightarrow \pi[\delta(\omega - 4) + \delta(\omega + 4)]
 $$
 
-由 $x(t - t_{0}) \leftrightarrow X(\omega)e^{-j\omega t_{0}}$ 得：
+由 $x(t - t_{0}) \leftrightarrow X(\omega)e^{-j\omega t_{0}}$ （时移性质）得：
 
 $$
-\cos\left( 4t + \frac{\pi}{3} \right) \leftrightarrow \pi[\delta(\omega - 4) + \delta(\omega + 4)]e^{j\omega \pi/3}
+\begin{align*}
+\cos\left( 4t + \frac{\pi}{3} \right) & = \cos\left( 4(t + \frac{\pi}{12}) \right) \\
+& \stackrel{?}{\leftrightarrow} \pi[\delta(\omega - 4) + \delta(\omega + 4)]e^{j\omega \pi/12}
+\end{align*}
 $$
 于是：
 $$
-F\left[ \cos\left( 4t + \frac{\pi}{3} \right) \right] = \pi \cdot e^{j \omega \frac{\pi}{3}} \cdot \delta(\omega - 4) + \pi \cdot e^{j\omega \frac{\pi}{3}} \delta(\omega + 4)
+F\left[ \cos\left( 4t + \frac{\pi}{3} \right) \right] = \pi \cdot e^{j \omega \frac{\pi}{12}} \cdot \delta(\omega - 4) + \pi \cdot e^{j\omega \frac{\pi}{12}} \delta(\omega + 4)
 $$
 
 :::
@@ -588,5 +598,20 @@ $$
 问题的所在是单位脉冲函数的尺度变换性找不到合理的解释。
 
 一些可能有用的相关资料：[阶跃函数的傅里叶变换到底是什么？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/52792295)
+
+来自BingAI的回答：
+>解法2是正确的。解法1中的错误在于时移性质的应用上。在傅立叶变换中，如果信号 $x(t)$ 的傅立叶变换是 $X(\omega)$，那么信号 $x(t - t_{0})$ 的傅立叶变换是 $X(\omega)e^{-j\omega t_{0}}$。这里的 $t_{0}$ 是时间延迟，应该是在时间轴上的移动，而不是在频率上的移动。所以，$\cos\left( 4t + \frac{\pi}{3} \right)$ 应该看作 $\cos(4t)$ 的相位移动，而不是时间移动。因此，解法1中的 $\cos\left( 4(t + \frac{\pi}{12}) \right)$ 是不正确的。正确的应用应该是：
+$$
+\cos\left( 4t + \frac{\pi}{3} \right) = \cos(4t)\cos\left(\frac{\pi}{3}\right) - \sin(4t)\sin\left(\frac{\pi}{3}\right)
+$$
+然后分别对 $\cos(4t)$ 和 $\sin(4t)$ 进行傅立叶变换。这样就能得到和解法2相同的结果了。
+
+>错误的做法在于，它没有正确地处理相位偏移。在傅立叶变换中，相位偏移会影响到频谱的相位，而不是幅度。在这个例子中，$\cos\left( 4t + \frac{\pi}{3} \right)$ 的频谱应该是两个脉冲，分别在 $\omega = 4$ 和 $\omega = -4$，并且它们的相位分别为 $e^{j\pi/3}$ 和 $e^{-j\pi/3}$。
+错误的做法将 $e^{j\omega \pi/3}$ 应用到了整个频谱上，这是不正确的。正确的做法是将 $e^{j\pi/3}$ 和 $e^{-j\pi/3}$ 分别应用到 $\omega = 4$ 和 $\omega = -4$ 的脉冲上。因此，正确的频谱应该是：
+$$
+F\left[ \cos\left( 4t + \frac{\pi}{3} \right) \right] = \pi \cdot e^{j \pi/3} \cdot \delta(\omega - 4) + \pi \cdot e^{-j\pi/3} \delta(\omega + 4)
+$$
+这与正确解法给出的结果一致。所以，错误的做法错在没有正确处理相位偏移。
+希望这个解释能帮到你！
 
 ::::
